@@ -1,0 +1,5 @@
+09/03/2018 15:54:18;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfigConn] ;
+09/03/2018 15:54:19;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfigConn] ;
+09/03/2018 15:54:20;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfig] ;
+09/03/2018 15:54:20;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfig] ;
+09/03/2018 15:54:26;[L];frmLogin;actExecLogin_Click;Avvio Applicazione. UserId:PALTRY  Password:;

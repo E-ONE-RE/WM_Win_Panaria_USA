@@ -1,0 +1,216 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_CONNECTION_ZWS_MB_CHECK_CONNECTION" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_connection/100/zws_mb_check_connection/zws_mb_check_connection</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_JOBGROUP_OK_X_CLOSE_ZWS_CHECK_JOBGROUP_OK_X_CLOSE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_jobgroup_ok_x_close/100/zws_check_jobgroup_ok_x_close/zws_check_jobgroup_ok_x_close</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_DOCMAT_ZWS_MB_CHECK_DOCMAT" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_docmat/100/zws_mb_check_docmat/zws_mb_check_docmat</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_EXEC_RF_LOGIN_ZWS_MB_EXEC_RF_LOGIN" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_mb_exec_rf_login/100/zws_mb_exec_rf_login/zws_mb_exec_rf_login</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_SYSTEM_INFO_ZWS_MB_GET_SYSTEM_INFO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_system_info/100/zws_mb_get_system_info/zws_mb_get_system_info</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_DOCMAT_CONFIRM_QTY_ZWS_MB_GET_DOCMAT_CONFIRM_QTY" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_docmat_confirm_qty/100/zws_mb_get_docmat_confirm_qty/zws_mb_get_docmat_confirm_qty</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GOODSMVT_CREATE_MB1B_ZWS_MB_GOODSMVT_CREATE_MB1B" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_goodsmvt_create_mb1b/100/zws_mb_goodsmvt_create_mb1b/zws_mb_goodsmvt_create_mb1b</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GOODSMVT_CREATE_MB11_ZWS_MB_GOODSMVT_CREATE_MB11" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_goodsmvt_create_mb11/100/zws_mb_goodsmvt_create_mb11/zws_mb_goodsmvt_create_mb11</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GOODSMVT_CREATE_MB11_Q_ZWS_MB_GOODSMVT_CREATE_MB11_Q" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_goodsmvt_create_mb11_q/100/zws_mb_goodsmvt_create_mb11_q/zws_mb_goodsmvt_create_mb11_q</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_SU_INFO_ZWS_MB_GET_SU_INFO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_su_info/100/zws_mb_get_su_info/zws_mb_get_su_info</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_MATERIAL_LIST_ZWS_MB_GET_MATERIAL_LIST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_material_list/100/zws_mb_get_material_list/zws_mb_get_material_list</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_LQUA_GIACENZE_ZWS_MB_GET_LQUA_GIACENZE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_mb_get_lqua_giacenze/100/zws_mb_get_lqua_giacenze/zws_mb_get_lqua_giacenze</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_LGTYP_LIST_ZWS_MB_GET_LGTYP_LIST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_lgtyp_list/100/zws_mb_get_lgtyp_list/zws_mb_get_lgtyp_list</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_JOBS_SINGLE_ZWS_GET_JOBS_SINGLE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDSBX01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_jobs_single/100/zws_get_jobs_single/zws_get_jobs_single</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_WM_INPUT_DEST_BASIC_ZWS_MB_GET_WM_INPUT_DEST_BASIC" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_wm_input_dest_basic/100/zws_mb_get_wm_input_dest_basic/zws_mb_get_wm_input_dest_basic</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_DOCMAT_POS_DA_CONF_ZWS_MB_GET_DOCMAT_POS_DA_CONF" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_docmat_pos_da_conf/100/zws_mb_get_docmat_pos_da_conf/zws_mb_get_docmat_pos_da_conf</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_ODA_INPUT_DEST_ZWS_MB_GET_ODA_INPUT_DEST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_oda_input_dest/100/zws_mb_get_oda_input_dest/zws_mb_get_oda_input_dest</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_DOCMAT_ZWS_MB_GET_DOCMAT" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_docmat/100/zws_mb_get_docmat/zws_mb_get_docmat</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_COMMESSE_DOCMAT_ZWS_MB_GET_COMMESSE_DOCMAT" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_commesse_docmat/100/zws_mb_get_commesse_docmat/zws_mb_get_commesse_docmat</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_EXEC_WM_WMS_TO_ZWS_MB_EXEC_WM_WMS_TO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_exec_wm_wms_to/100/zws_mb_exec_wm_wms_to/zws_mb_exec_wm_wms_to</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_EXEC_WM_TO_MOVE_SU_ZWS_MB_EXEC_WM_TO_MOVE_SU" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_exec_wm_to_move_su/100/zws_mb_exec_wm_to_move_su/zws_mb_exec_wm_to_move_su</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_STOCK_GIACENZA_ZWS_MB_CHECK_STOCK_GIACENZA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_stock_giacenza/100/zws_mb_check_stock_giacenza/zws_mb_check_stock_giacenza</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_ORDINE_VENDITA_ZWS_MB_CHECK_ORDINE_VENDITA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_ordine_vendita/100/zws_mb_check_ordine_vendita/zws_mb_check_ordine_vendita</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_MULTIPLE_LENUM_ZWS_MB_CHECK_MULTIPLE_LENUM" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_multiple_lenum/100/zws_mb_check_multiple_lenum/zws_mb_check_multiple_lenum</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_ODP_ZWS_MB_CHECK_ODP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_odp/100/zws_mb_check_odp/zws_mb_check_odp</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CREA_UBICAZIONE_ZWS_MB_CREA_UBICAZIONE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_crea_ubicazione/100/zws_mb_crea_ubicazione/zws_mb_crea_ubicazione</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_MATNR_ANA_FABBISO_ZWS_MB_CHECK_MATNR_ANA_FABBISO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_matnr_ana_fabbiso/100/zws_mb_check_matnr_ana_fabbiso/zws_mb_check_matnr_ana_fabbiso</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_STOCK_AND_GET_DEST_ZWS_CHECK_STOCK_AND_GET_DEST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_stock_and_get_dest/100/zws_check_stock_and_get_dest/zws_check_stock_and_get_dest</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_WM_OUT_DEST_BASIC_ZWS_MB_GET_WM_OUT_DEST_BASIC" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_wm_out_dest_basic/100/zws_mb_get_wm_out_dest_basic/zws_mb_get_wm_out_dest_basic</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_LENUM_GIACENZA_ZWS_MB_CHECK_LENUM_GIACENZA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_lenum_giacenza/100/zws_mb_check_lenum_giacenza/zws_mb_check_lenum_giacenza</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_LENUM_WITH_LGPLA_ZWS_MB_CHECK_LENUM_WITH_LGPLA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_lenum_with_lgpla/100/zws_mb_check_lenum_with_lgpla/zws_mb_check_lenum_with_lgpla</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_JOBS_GROUP_LAST_SEQ_ZWS_CHECK_JOBS_GROUP_LAST_SEQ" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_jobs_group_last_seq/100/zws_check_jobs_group_last_seq/zws_check_jobs_group_last_seq</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_SET_JOBSGROUP_UBI_DEST_ZWS_SET_JOBSGROUP_UBI_DEST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_set_jobsgroup_ubi_dest/100/zws_set_jobsgroup_ubi_dest/zws_set_jobsgroup_ubi_dest</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_SET_JOBSGROUP_CLOSED_ZWS_SET_JOBSGROUP_CLOSED" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_set_jobsgroup_closed/100/zws_set_jobsgroup_closed/zws_set_jobsgroup_closed</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_WM_OUT_ORI_BASIC_ZWS_MB_GET_WM_OUT_ORI_BASIC" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_wm_out_ori_basic/100/zws_mb_get_wm_out_ori_basic/zws_mb_get_wm_out_ori_basic</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_MATNR_INPUT_DEST_ZWS_MB_GET_MATNR_INPUT_DEST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_matnr_input_dest/100/zws_mb_get_matnr_input_dest/zws_mb_get_matnr_input_dest</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_MATERIAL_EXIST_ZWS_MB_CHECK_MATERIAL_EXIST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_check_material_exist/100/zws_mb_check_material_exist/zws_mb_check_material_exist</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_SET_JOBSGROUP_ACTIVATE_ZWS_SET_JOBSGROUP_ACTIVATE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_set_jobsgroup_activate/100/zws_set_jobsgroup_activate/zws_set_jobsgroup_activate</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_SET_JOB_STEP_FORCED_NEXT_ZWS_SET_JOB_STEP_FORCED_NEXT" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_set_job_step_forced_next/100/zws_set_job_step_forced_next/zws_set_job_step_forced_next</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_SET_JOB_STATUS_FORCED_END_ZWS_SET_JOB_STATUS_FORCED_END" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_set_job_status_forced_end/100/zws_set_job_status_forced_end/zws_set_job_status_forced_end</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_SET_JOB_CARRELLISTA_ZWS_SET_JOB_CARRELLISTA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_set_job_carrellista/100/zws_set_job_carrellista/zws_set_job_carrellista</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_PRODORD_GET_DETAIL_ZWS_MB_PRODORD_GET_DETAIL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_prodord_get_detail/100/zws_mb_prodord_get_detail/zws_mb_prodord_get_detail</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_UBICAZIONI_INFO_ZWS_MB_GET_UBICAZIONI_INFO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_ubicazioni_info/100/zws_mb_get_ubicazioni_info/zws_mb_get_ubicazioni_info</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_MATERIAL_DISPONIBIL_ZWS_MB_GET_MATERIAL_DISPONIBIL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_material_disponibil/100/zws_mb_get_material_disponibil/zws_mb_get_material_disponibil</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_CHECK_LGPLA_ZWS_MB_CHECK_LGPLA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_mb_check_lgpla/100/zws_mb_check_lgpla/zws_mb_check_lgpla</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_GET_MATERIAL_DESCR_ZWS_MB_GET_MATERIAL_DESCR" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_mb_get_material_descr/100/zws_mb_get_material_descr/zws_mb_get_material_descr</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_JOB_STEPS_EXECUTED_ZWS_JOB_STEPS_EXECUTED" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_job_steps_executed/100/zws_job_steps_executed/zws_job_steps_executed</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_MATNR_PARTITE_ZWS_GET_MATNR_PARTITE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_get_matnr_partite/100/zws_get_matnr_partite/zws_get_matnr_partite</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_JOBS_LIST_ZWS_GET_JOBS_LIST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDSBX01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_jobs_list/100/zws_get_jobs_list/zws_get_jobs_list</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_JOBSGROUP_EXE_SUMMARY_ZWS_GET_JOBSGROUP_EXE_SUMMARY" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_get_jobsgroup_exe_summary/100/zws_get_jobsgroup_exe_summary/zws_get_jobsgroup_exe_summary</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_JOBS_GROUP_LIST_ZWS_GET_JOBS_GROUP_LIST" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDSBX01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_jobs_group_list/100/zws_get_jobs_group_list/zws_get_jobs_group_list</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_JOB_GROUP_EXEC_INFO_ZWS_GET_JOB_GROUP_EXEC_INFO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_get_job_group_exec_info/100/zws_get_job_group_exec_info/zws_get_job_group_exec_info</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_UDC_JOBS_DEST_OK_ZWS_CHECK_UDC_JOBS_DEST_OK" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_udc_jobs_dest_ok/100/zws_check_udc_jobs_dest_ok/zws_check_udc_jobs_dest_ok</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_PICK_ALL_SU_ZWS_CHECK_PICK_ALL_SU" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_pick_all_su/100/zws_check_pick_all_su/zws_check_pick_all_su</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_JOBSGROUP_MATNR_OK_ZWS_CHECK_JOBSGROUP_MATNR_OK" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_jobsgroup_matnr_ok/100/zws_check_jobsgroup_matnr_ok/zws_check_jobsgroup_matnr_ok</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_CHECK_JOBS_OK_FOR_ACTION_ZWS_CHECK_JOBS_OK_FOR_ACTION" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_check_jobs_ok_for_action/100/zws_check_jobs_ok_for_action/zws_check_jobs_ok_for_action</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_APP_TRANSLATION_ZWS_GET_APP_TRANSLATION" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.126.70.10:50040/sap/bc/srt/rfc/sap/zws_get_app_translation/100/zws_get_app_translation/zws_get_app_translation</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_MB_EXEC_WM_TO_MOVE_SU_MUL_ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_mb_exec_wm_to_move_su_mul/100/zws_mb_exec_wm_to_move_su_mul/zws_mb_exec_wm_to_move_su_mul</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_JOB_EM_STEPS_EXECUTED_ZWS_JOB_EM_STEPS_EXECUTED" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_job_em_steps_executed/100/zws_job_em_steps_executed/zws_job_em_steps_executed</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_USERS_PROF_LGTYP_ZWS_GET_USERS_PROF_LGTYP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_users_prof_lgtyp/100/zws_get_users_prof_lgtyp/zws_get_users_prof_lgtyp</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_UBI_SPUNTA_ZWS_GET_UBI_SPUNTA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_ubi_spunta/100/zws_get_ubi_spunta/zws_get_ubi_spunta</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_FORKLIFT_ZWS_GET_FORKLIFT" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_forklift/100/zws_get_forklift/zws_get_forklift</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_JOBS_GROUP_SINGLE_MB_ZWS_GET_JOBS_GROUP_SINGLE_MB" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_jobs_group_single_mb/100/zws_get_jobs_group_single_mb/zws_get_jobs_group_single_mb</Value>
+    </Setting>
+    <Setting Name="WM_Win_PanariaUSA_WS_GET_APPLICATION_PARAMS_ZWS_GET_APPLICATION_PARAMS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_get_application_params/100/zws_get_application_params/zws_get_application_params</Value>
+    </Setting>
+    <Setting Name="UserRfcWs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">eone</Value>
+    </Setting>
+    <Setting Name="PswUserRfcWs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Thebest2016!</Value>
+    </Setting>
+    <Setting Name="WsHostName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10.126.72.11</Value>
+    </Setting>
+    <Setting Name="WsPortNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3340</Value>
+    </Setting>
+    <Setting Name="SapClient" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="SystemID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ECQ</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

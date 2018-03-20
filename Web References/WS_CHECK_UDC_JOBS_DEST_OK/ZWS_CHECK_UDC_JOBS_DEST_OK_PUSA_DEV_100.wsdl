@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:n1="urn:sap-com:document:sap:rfc:functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="BN__ZWS_CHECK_UDC_JOBS_DEST_OK">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN__ZWS_CHECK_UDC_JOBS_DEST_OK_soap12">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__ZWS_CHECK_UDC_JOBS_DEST_OK">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
+          <sapcentraladmin:BusinessApplicationID>000C29FD93861EE589E23A0884D34E8B</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__ZwmsCheckUdcJobsDestOk">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char11">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="11" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char12">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="12" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char132">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="132" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char14">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="14" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char15">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="15" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char16">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="16" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char18">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="18" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char220">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="220" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char25">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="25" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char28">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="28" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char30">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="30" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char31">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="31" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char32">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="32" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char35">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="35" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char40">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char50">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char6">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="6" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char60">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="60" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="clnt3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="cuky5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr15.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="15" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr8.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="8" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="date10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+          <xsd:pattern value="\d\d\d\d-\d\d-\d\d" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="lang">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric6">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="6" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric7">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="7" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="quantum13.3">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="13" />
+          <xsd:fractionDigits value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="quantum15.3">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="15" />
+          <xsd:fractionDigits value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+      <xsd:simpleType name="time">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+      <xsd:simpleType name="unit3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns:n0="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions" />
+      <xsd:complexType name="Kna1">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="Kunnr" type="n0:char10" />
+          <xsd:element name="Land1" type="n0:char3" />
+          <xsd:element name="Name1" type="n0:char35" />
+          <xsd:element name="Name2" type="n0:char35" />
+          <xsd:element name="Ort01" type="n0:char35" />
+          <xsd:element name="Pstlz" type="n0:char10" />
+          <xsd:element name="Regio" type="n0:char3" />
+          <xsd:element name="Sortl" type="n0:char10" />
+          <xsd:element name="Stras" type="n0:char35" />
+          <xsd:element name="Telf1" type="n0:char16" />
+          <xsd:element name="Telfx" type="n0:char31" />
+          <xsd:element name="Xcpdk" type="n0:char1" />
+          <xsd:element name="Adrnr" type="n0:char10" />
+          <xsd:element name="Mcod1" type="n0:char25" />
+          <xsd:element name="Mcod2" type="n0:char25" />
+          <xsd:element name="Mcod3" type="n0:char25" />
+          <xsd:element name="Anred" type="n0:char15" />
+          <xsd:element name="Aufsd" type="n0:char2" />
+          <xsd:element name="Bahne" type="n0:char25" />
+          <xsd:element name="Bahns" type="n0:char25" />
+          <xsd:element name="Bbbnr" type="n0:numeric7" />
+          <xsd:element name="Bbsnr" type="n0:numeric5" />
+          <xsd:element name="Begru" type="n0:char4" />
+          <xsd:element name="Brsch" type="n0:char4" />
+          <xsd:element name="Bubkz" type="n0:numeric1" />
+          <xsd:element name="Datlt" type="n0:char14" />
+          <xsd:element name="Erdat" type="n0:date10" />
+          <xsd:element name="Ernam" type="n0:char12" />
+          <xsd:element name="Exabl" type="n0:char1" />
+          <xsd:element name="Faksd" type="n0:char2" />
+          <xsd:element name="Fiskn" type="n0:char10" />
+          <xsd:element name="Knazk" type="n0:char2" />
+          <xsd:element name="Knrza" type="n0:char10" />
+          <xsd:element name="Konzs" type="n0:char10" />
+          <xsd:element name="Ktokd" type="n0:char4" />
+          <xsd:element name="Kukla" type="n0:char2" />
+          <xsd:element name="Lifnr" type="n0:char10" />
+          <xsd:element name="Lifsd" type="n0:char2" />
+          <xsd:element name="Locco" type="n0:char10" />
+          <xsd:element name="Loevm" type="n0:char1" />
+          <xsd:element name="Name3" type="n0:char35" />
+          <xsd:element name="Name4" type="n0:char35" />
+          <xsd:element name="Niels" type="n0:char2" />
+          <xsd:element name="Ort02" type="n0:char35" />
+          <xsd:element name="Pfach" type="n0:char10" />
+          <xsd:element name="Pstl2" type="n0:char10" />
+          <xsd:element name="Counc" type="n0:char3" />
+          <xsd:element name="Cityc" type="n0:char4" />
+          <xsd:element name="Rpmkr" type="n0:char5" />
+          <xsd:element name="Sperr" type="n0:char1" />
+          <xsd:element name="Spras" type="n0:lang" />
+          <xsd:element name="Stcd1" type="n0:char16" />
+          <xsd:element name="Stcd2" type="n0:char11" />
+          <xsd:element name="Stkza" type="n0:char1" />
+          <xsd:element name="Stkzu" type="n0:char1" />
+          <xsd:element name="Telbx" type="n0:char15" />
+          <xsd:element name="Telf2" type="n0:char16" />
+          <xsd:element name="Teltx" type="n0:char30" />
+          <xsd:element name="Telx1" type="n0:char30" />
+          <xsd:element name="Lzone" type="n0:char10" />
+          <xsd:element name="Xzemp" type="n0:char1" />
+          <xsd:element name="Vbund" type="n0:char6" />
+          <xsd:element name="Stceg" type="n0:char20" />
+          <xsd:element name="Dear1" type="n0:char1" />
+          <xsd:element name="Dear2" type="n0:char1" />
+          <xsd:element name="Dear3" type="n0:char1" />
+          <xsd:element name="Dear4" type="n0:char1" />
+          <xsd:element name="Dear5" type="n0:char1" />
+          <xsd:element name="Gform" type="n0:char2" />
+          <xsd:element name="Bran1" type="n0:char10" />
+          <xsd:element name="Bran2" type="n0:char10" />
+          <xsd:element name="Bran3" type="n0:char10" />
+          <xsd:element name="Bran4" type="n0:char10" />
+          <xsd:element name="Bran5" type="n0:char10" />
+          <xsd:element name="Ekont" type="n0:char10" />
+          <xsd:element name="Umsat" type="n0:curr8.2" />
+          <xsd:element name="Umjah" type="n0:numeric4" />
+          <xsd:element name="Uwaer" type="n0:cuky5" />
+          <xsd:element name="Jmzah" type="n0:numeric6" />
+          <xsd:element name="Jmjah" type="n0:numeric4" />
+          <xsd:element name="Katr1" type="n0:char2" />
+          <xsd:element name="Katr2" type="n0:char2" />
+          <xsd:element name="Katr3" type="n0:char2" />
+          <xsd:element name="Katr4" type="n0:char2" />
+          <xsd:element name="Katr5" type="n0:char2" />
+          <xsd:element name="Katr6" type="n0:char3" />
+          <xsd:element name="Katr7" type="n0:char3" />
+          <xsd:element name="Katr8" type="n0:char3" />
+          <xsd:element name="Katr9" type="n0:char3" />
+          <xsd:element name="Katr10" type="n0:char3" />
+          <xsd:element name="Stkzn" type="n0:char1" />
+          <xsd:element name="Umsa1" type="n0:curr15.2" />
+          <xsd:element name="Txjcd" type="n0:char15" />
+          <xsd:element name="Periv" type="n0:char2" />
+          <xsd:element name="Abrvw" type="n0:char3" />
+          <xsd:element name="Inspbydebi" type="n0:char1" />
+          <xsd:element name="Inspatdebi" type="n0:char1" />
+          <xsd:element name="Ktocd" type="n0:char4" />
+          <xsd:element name="Pfort" type="n0:char35" />
+          <xsd:element name="Werks" type="n0:char4" />
+          <xsd:element name="Dtams" type="n0:char1" />
+          <xsd:element name="Dtaws" type="n0:char2" />
+          <xsd:element name="Duefl" type="n0:char1" />
+          <xsd:element name="Hzuor" type="n0:numeric2" />
+          <xsd:element name="Sperz" type="n0:char1" />
+          <xsd:element name="Etikg" type="n0:char10" />
+          <xsd:element name="Civve" type="n0:char1" />
+          <xsd:element name="Milve" type="n0:char1" />
+          <xsd:element name="Kdkg1" type="n0:char2" />
+          <xsd:element name="Kdkg2" type="n0:char2" />
+          <xsd:element name="Kdkg3" type="n0:char2" />
+          <xsd:element name="Kdkg4" type="n0:char2" />
+          <xsd:element name="Kdkg5" type="n0:char2" />
+          <xsd:element name="Xknza" type="n0:char1" />
+          <xsd:element name="Fityp" type="n0:char2" />
+          <xsd:element name="Stcdt" type="n0:char2" />
+          <xsd:element name="Stcd3" type="n0:char18" />
+          <xsd:element name="Stcd4" type="n0:char18" />
+          <xsd:element name="Stcd5" type="n0:char60" />
+          <xsd:element name="Xicms" type="n0:char1" />
+          <xsd:element name="Xxipi" type="n0:char1" />
+          <xsd:element name="Xsubt" type="n0:char3" />
+          <xsd:element name="Cfopc" type="n0:char2" />
+          <xsd:element name="Txlw1" type="n0:char3" />
+          <xsd:element name="Txlw2" type="n0:char3" />
+          <xsd:element name="Ccc01" type="n0:char1" />
+          <xsd:element name="Ccc02" type="n0:char1" />
+          <xsd:element name="Ccc03" type="n0:char1" />
+          <xsd:element name="Ccc04" type="n0:char1" />
+          <xsd:element name="Cassd" type="n0:char2" />
+          <xsd:element name="Knurl" type="n0:char132" />
+          <xsd:element name="J1kfrepre" type="n0:char10" />
+          <xsd:element name="J1kftbus" type="n0:char30" />
+          <xsd:element name="J1kftind" type="n0:char30" />
+          <xsd:element name="Confs" type="n0:char1" />
+          <xsd:element name="Updat" type="n0:date10" />
+          <xsd:element name="Uptim" type="n0:time" />
+          <xsd:element name="Nodel" type="n0:char1" />
+          <xsd:element name="Dear6" type="n0:char1" />
+          <xsd:element name="_-vso_-rPalhgt" type="n0:quantum13.3" />
+          <xsd:element name="_-vso_-rPalUl" type="n0:unit3" />
+          <xsd:element name="_-vso_-rPkMat" type="n0:char1" />
+          <xsd:element name="_-vso_-rMatpal" type="n0:char18" />
+          <xsd:element name="_-vso_-rINoLyr" type="n0:numeric2" />
+          <xsd:element name="_-vso_-rOneMat" type="n0:char1" />
+          <xsd:element name="_-vso_-rOneSort" type="n0:char1" />
+          <xsd:element name="_-vso_-rUldSide" type="n0:numeric1" />
+          <xsd:element name="_-vso_-rLoadPref" type="n0:numeric1" />
+          <xsd:element name="_-vso_-rDpoint" type="n0:char10" />
+          <xsd:element name="Alc" type="n0:char8" />
+          <xsd:element name="PmtOffice" type="n0:char5" />
+          <xsd:element name="Psofg" type="n0:char10" />
+          <xsd:element name="Psois" type="n0:char20" />
+          <xsd:element name="Pson1" type="n0:char35" />
+          <xsd:element name="Pson2" type="n0:char35" />
+          <xsd:element name="Pson3" type="n0:char35" />
+          <xsd:element name="Psovn" type="n0:char35" />
+          <xsd:element name="Psotl" type="n0:char20" />
+          <xsd:element name="Psohs" type="n0:char6" />
+          <xsd:element name="Psost" type="n0:char28" />
+          <xsd:element name="Psoo1" type="n0:char50" />
+          <xsd:element name="Psoo2" type="n0:char50" />
+          <xsd:element name="Psoo3" type="n0:char50" />
+          <xsd:element name="Psoo4" type="n0:char50" />
+          <xsd:element name="Psoo5" type="n0:char50" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Bapiret2">
+        <xsd:sequence>
+          <xsd:element name="Type" type="n0:char1" />
+          <xsd:element name="Id" type="n0:char20" />
+          <xsd:element name="Number" type="n0:numeric3" />
+          <xsd:element name="Message" type="n0:char220" />
+          <xsd:element name="LogNo" type="n0:char20" />
+          <xsd:element name="LogMsgNo" type="n0:numeric6" />
+          <xsd:element name="MessageV1" type="n0:char50" />
+          <xsd:element name="MessageV2" type="n0:char50" />
+          <xsd:element name="MessageV3" type="n0:char50" />
+          <xsd:element name="MessageV4" type="n0:char50" />
+          <xsd:element name="Parameter" type="n0:char32" />
+          <xsd:element name="Row" type="xsd:int" />
+          <xsd:element name="Field" type="n0:char30" />
+          <xsd:element name="System" type="n0:char10" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZwmsJobsActEx">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="ZnrJobsActEx" type="xsd:int" />
+          <xsd:element name="ZnrWmsJobs" type="xsd:int" />
+          <xsd:element name="IdJobsType" type="n0:char3" />
+          <xsd:element name="ZnrWmsJobsCar" type="n0:numeric10" />
+          <xsd:element name="ZwmsJobsStep" type="n0:numeric4" />
+          <xsd:element name="ZnrWmsJobsgrp" type="n0:char10" />
+          <xsd:element name="ZnrWmsGrpexec" type="xsd:int" />
+          <xsd:element name="Idstatus" type="xsd:short" />
+          <xsd:element name="IdJobAction" type="n0:char10" />
+          <xsd:element name="DataCreazione" type="n0:date10" />
+          <xsd:element name="OraCreazione" type="n0:time" />
+          <xsd:element name="Userid" type="n0:char12" />
+          <xsd:element name="IdWmsDevices" type="n0:char3" />
+          <xsd:element name="WmsDevicesName" type="n0:char40" />
+          <xsd:element name="MatnrOri" type="n0:char18" />
+          <xsd:element name="WerksOri" type="n0:char4" />
+          <xsd:element name="LgortOri" type="n0:char4" />
+          <xsd:element name="ChargOri" type="n0:char10" />
+          <xsd:element name="MeinsOri" type="n0:unit3" />
+          <xsd:element name="LgnumOri" type="n0:char3" />
+          <xsd:element name="LgtypOri" type="n0:char3" />
+          <xsd:element name="LgplaOri" type="n0:char10" />
+          <xsd:element name="LenumOri" type="n0:char20" />
+          <xsd:element name="ZqtaPrelBase" type="n0:quantum15.3" />
+          <xsd:element name="UdmQtaprMeins" type="n0:unit3" />
+          <xsd:element name="ZqtaPrelCons" type="n0:quantum15.3" />
+          <xsd:element name="UdmQtaprCons" type="n0:unit3" />
+          <xsd:element name="LgnumDest" type="n0:char3" />
+          <xsd:element name="LgtypDest" type="n0:char3" />
+          <xsd:element name="LgplaDest" type="n0:char10" />
+          <xsd:element name="LenumDest" type="n0:char20" />
+          <xsd:element name="MatnrDest" type="n0:char18" />
+          <xsd:element name="WerksDest" type="n0:char4" />
+          <xsd:element name="LgortDest" type="n0:char4" />
+          <xsd:element name="ChargDest" type="n0:char10" />
+          <xsd:element name="LgnumPropOri" type="n0:char3" />
+          <xsd:element name="LgtypPropOri" type="n0:char3" />
+          <xsd:element name="LgplaPropOri" type="n0:char10" />
+          <xsd:element name="QtaPropOri" type="n0:quantum13.3" />
+          <xsd:element name="UdmQtaPropOri" type="n0:unit3" />
+          <xsd:element name="LgnumPropDest" type="n0:char3" />
+          <xsd:element name="LgtypPropDest" type="n0:char3" />
+          <xsd:element name="LgplaPropDest" type="n0:char10" />
+          <xsd:element name="QtaPropDest" type="n0:quantum13.3" />
+          <xsd:element name="UdmQtaPropDes" type="n0:unit3" />
+          <xsd:element name="JobsActStDt" type="n0:date10" />
+          <xsd:element name="JobsActStTm" type="n0:time" />
+          <xsd:element name="JobsActEnDt" type="n0:date10" />
+          <xsd:element name="JobsActEnTm" type="n0:time" />
+          <xsd:element name="JobsActDurata" type="xsd:int" />
+          <xsd:element name="LgnumOt" type="n0:char3" />
+          <xsd:element name="TanumOt" type="n0:numeric10" />
+          <xsd:element name="ZqtaDiffprelBs" type="n0:quantum15.3" />
+          <xsd:element name="UdmDiffqtaprBs" type="n0:unit3" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZwmsJobs">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="ZnrWmsJobs" type="xsd:int" />
+          <xsd:element name="Sequence" type="xsd:int" />
+          <xsd:element name="SequencePrint" type="xsd:int" />
+          <xsd:element name="ExecPrint" type="n0:char1" />
+          <xsd:element name="PrintDone" type="n0:char1" />
+          <xsd:element name="CurrentStep" type="xsd:unsignedByte" />
+          <xsd:element name="NumStepsTotal" type="n0:numeric4" />
+          <xsd:element name="DataCreazione" type="n0:date10" />
+          <xsd:element name="OraCreazione" type="n0:time" />
+          <xsd:element name="PickDbtabname" type="n0:char16" />
+          <xsd:element name="Znrpick" type="n0:char10" />
+          <xsd:element name="Zpospk" type="n0:numeric6" />
+          <xsd:element name="Vbeln" type="n0:char10" />
+          <xsd:element name="Posnr" type="n0:numeric6" />
+          <xsd:element name="NumConsVbelv" type="n0:char10" />
+          <xsd:element name="PosConsPosnv" type="n0:numeric6" />
+          <xsd:element name="ZnrWmsJobsgrp" type="n0:char10" />
+          <xsd:element name="ZnrWmsGrpexec" type="xsd:int" />
+          <xsd:element name="Mblnr" type="n0:char10" />
+          <xsd:element name="Mjahr" type="n0:numeric4" />
+          <xsd:element name="Zeile" type="n0:numeric4" />
+          <xsd:element name="Idstatus" type="xsd:short" />
+          <xsd:element name="IdJobsType" type="n0:char3" />
+          <xsd:element name="IdWmsDevices" type="n0:char3" />
+          <xsd:element name="Priorita" type="xsd:int" />
+          <xsd:element name="Urgente" type="n0:char1" />
+          <xsd:element name="MatnrOri" type="n0:char18" />
+          <xsd:element name="WerksOri" type="n0:char4" />
+          <xsd:element name="LgortOri" type="n0:char4" />
+          <xsd:element name="ChargOri" type="n0:char10" />
+          <xsd:element name="BestqOri" type="n0:char1" />
+          <xsd:element name="SobkzOri" type="n0:char1" />
+          <xsd:element name="SonumOri" type="n0:char16" />
+          <xsd:element name="MeinsOri" type="n0:unit3" />
+          <xsd:element name="ZqtapkOri" type="n0:quantum15.3" />
+          <xsd:element name="ZqtaPrelBase" type="n0:quantum15.3" />
+          <xsd:element name="UdmQtaprMeins" type="n0:unit3" />
+          <xsd:element name="ZqtaPrelCons" type="n0:quantum15.3" />
+          <xsd:element name="UdmQtaprCons" type="n0:unit3" />
+          <xsd:element name="Zflawm" type="n0:char1" />
+          <xsd:element name="PalletInteri" type="n0:char1" />
+          <xsd:element name="ScatoleIntere" type="n0:char1" />
+          <xsd:element name="ZcarrProp" type="n0:char12" />
+          <xsd:element name="ZcarrExec" type="n0:char12" />
+          <xsd:element name="LgnumOri" type="n0:char3" />
+          <xsd:element name="LgtypOri" type="n0:char3" />
+          <xsd:element name="LgplaOri" type="n0:char10" />
+          <xsd:element name="LenumOri" type="n0:char20" />
+          <xsd:element name="LgnumDest" type="n0:char3" />
+          <xsd:element name="LgtypDest" type="n0:char3" />
+          <xsd:element name="LgplaDest" type="n0:char10" />
+          <xsd:element name="LenumDest" type="n0:char20" />
+          <xsd:element name="MatnrDest" type="n0:char18" />
+          <xsd:element name="WerksDest" type="n0:char4" />
+          <xsd:element name="LgortDest" type="n0:char4" />
+          <xsd:element name="ChargDest" type="n0:char10" />
+          <xsd:element name="BestqDest" type="n0:char1" />
+          <xsd:element name="SobkzDest" type="n0:char1" />
+          <xsd:element name="SonumDest" type="n0:char16" />
+          <xsd:element name="LgnumPropOri" type="n0:char3" />
+          <xsd:element name="LgtypPropOri" type="n0:char3" />
+          <xsd:element name="LgplaPropOri" type="n0:char10" />
+          <xsd:element name="OkQtaPropOri" type="n0:char1" />
+          <xsd:element name="LgnumPropDest" type="n0:char3" />
+          <xsd:element name="LgtypPropDest" type="n0:char3" />
+          <xsd:element name="LgplaPropDest" type="n0:char10" />
+          <xsd:element name="OkQtaPropDest" type="n0:char1" />
+          <xsd:element name="ChargTassativa" type="n0:char1" />
+          <xsd:element name="Zdoc" type="n0:char3" />
+          <xsd:element name="FornitoreLifnr" type="n0:char10" />
+          <xsd:element name="Dele" type="n0:char1" />
+          <xsd:element name="Memo" type="n0:char30" />
+          <xsd:element name="ZzNdis" type="n0:char10" />
+          <xsd:element name="Ernam" type="n0:char12" />
+          <xsd:element name="Erdat" type="n0:date10" />
+          <xsd:element name="Erzeit" type="n0:time" />
+          <xsd:element name="Aenam" type="n0:char12" />
+          <xsd:element name="Aedat" type="n0:date10" />
+          <xsd:element name="Aezeit" type="n0:time" />
+          <xsd:element name="DataStart" type="n0:date10" />
+          <xsd:element name="OraStart" type="n0:time" />
+          <xsd:element name="DataFine" type="n0:date10" />
+          <xsd:element name="OraFine" type="n0:time" />
+          <xsd:element name="ZnrWmsJobsOri" type="xsd:int" />
+          <xsd:element name="ZwmsjobsgrpOri" type="n0:char10" />
+          <xsd:element name="InfoPrelievo" type="n0:char40" />
+          <xsd:element name="ZnrWmsJobsCar" type="n0:numeric10" />
+          <xsd:element name="Ltkze" type="n0:char3" />
+          <xsd:element name="Ltkza" type="n0:char3" />
+          <xsd:element name="ZmatnrChkPron" type="n0:char3" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZtwmsJobsActEx">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZwmsJobsActEx" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZtwmsJobs">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZwmsJobs" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZwmsCheckUdcJobsDestOk">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ICallPrgId" type="n0:char1" />
+            <xsd:element minOccurs="0" name="IEnableDebug" type="n0:char1" />
+            <xsd:element minOccurs="0" name="IGetJobactionAllSteps" type="n0:char1" />
+            <xsd:element name="ILenum" type="n0:char20" />
+            <xsd:element minOccurs="0" name="IParvwWe" type="n0:char2" />
+            <xsd:element minOccurs="0" name="ISpras" type="n0:lang" />
+            <xsd:element name="IWerks" type="n0:char4" />
+            <xsd:element name="IZnrWmsJobs" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZwmsCheckUdcJobsDestOkResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ECheckDestUdcOk" type="n0:char1" />
+            <xsd:element name="EErrorCode" type="n0:char10" />
+            <xsd:element name="EErrorDescription" type="n0:string" />
+            <xsd:element name="EErrorSubrc" type="xsd:int" />
+            <xsd:element name="EFoundrows" type="xsd:int" />
+            <xsd:element name="EKna1Current" type="tns:Kna1" />
+            <xsd:element name="EKna1WrongDest" type="tns:Kna1" />
+            <xsd:element name="EReturn" type="tns:Bapiret2" />
+            <xsd:element name="ESuccess" type="n0:char4" />
+            <xsd:element name="EZwmsJobsActExTab" type="tns:ZtwmsJobsActEx" />
+            <xsd:element name="EZwmsJobsTab" type="tns:ZtwmsJobs" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZwmsCheckUdcJobsDestOk">
+    <wsdl:part name="parameters" element="tns:ZwmsCheckUdcJobsDestOk" />
+  </wsdl:message>
+  <wsdl:message name="ZwmsCheckUdcJobsDestOkResponse">
+    <wsdl:part name="parameter" element="tns:ZwmsCheckUdcJobsDestOkResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ZWS_CHECK_UDC_JOBS_DEST_OK">
+    <wsdl:documentation>
+      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+        <sapdoc:docitem docURL="http://CLDDEV01.pancloud.local:50040/sap/bc/esdt/docu/sd_text?sap-client=100&amp;sd_name=ZWS_CHECK_UDC_JOBS_DEST_OK" />
+      </sapdoc:sapdoc>
+    </wsdl:documentation>
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__ZWS_CHECK_UDC_JOBS_DEST_OK" />
+    </wsp:Policy>
+    <wsdl:operation name="ZwmsCheckUdcJobsDestOk">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__ZwmsCheckUdcJobsDestOk" />
+      </wsp:Policy>
+      <wsdl:input message="tns:ZwmsCheckUdcJobsDestOk" />
+      <wsdl:output message="tns:ZwmsCheckUdcJobsDestOkResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZWS_CHECK_UDC_JOBS_DEST_OK" type="tns:ZWS_CHECK_UDC_JOBS_DEST_OK">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZWS_CHECK_UDC_JOBS_DEST_OK" />
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZwmsCheckUdcJobsDestOk">
+      <soap:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZWS_CHECK_UDC_JOBS_DEST_OK:ZwmsCheckUdcJobsDestOkRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZWS_CHECK_UDC_JOBS_DEST_OK_soap12" type="tns:ZWS_CHECK_UDC_JOBS_DEST_OK">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZWS_CHECK_UDC_JOBS_DEST_OK_soap12" />
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZwmsCheckUdcJobsDestOk">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZWS_CHECK_UDC_JOBS_DEST_OK:ZwmsCheckUdcJobsDestOkRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZWS_CHECK_UDC_JOBS_DEST_OK">
+    <wsdl:port name="ZWS_CHECK_UDC_JOBS_DEST_OK" binding="tns:ZWS_CHECK_UDC_JOBS_DEST_OK">
+      <soap:address location="http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_check_udc_jobs_dest_ok/100/zws_check_udc_jobs_dest_ok/zws_check_udc_jobs_dest_ok" />
+    </wsdl:port>
+    <wsdl:port name="ZWS_CHECK_UDC_JOBS_DEST_OK_soap12" binding="tns:ZWS_CHECK_UDC_JOBS_DEST_OK_soap12">
+      <wsoap12:address location="http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_check_udc_jobs_dest_ok/100/zws_check_udc_jobs_dest_ok/zws_check_udc_jobs_dest_ok" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

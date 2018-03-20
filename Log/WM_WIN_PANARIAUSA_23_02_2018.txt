@@ -1,0 +1,55 @@
+23/02/2018 11:47:22;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfigConn] ;
+23/02/2018 11:47:22;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfigConn] ;
+23/02/2018 11:47:24;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfig] ;
+23/02/2018 11:47:24;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfig] ;
+23/02/2018 11:47:37;[L];frmLogin;actExecLogin_Click;Avvio Applicazione. UserId:PALTRY  Password:;
+23/02/2018 12:03:25;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 8,6189139 secs;
+23/02/2018 12:04:14;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 4,4739554 secs;
+23/02/2018 12:04:24;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 4,7789524 secs;
+23/02/2018 12:51:11;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 2,0330409 secs;
+23/02/2018 12:51:42;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 2,1320428 secs;
+23/02/2018 12:53:12;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 3,6390735 secs;
+23/02/2018 12:53:16;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 1,6530333 secs;
+23/02/2018 12:53:36;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 3,5830727 secs;
+23/02/2018 12:53:40;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123111 Utente : PALTRY Fine - Elab. : 1,1700234 secs;
+23/02/2018 13:02:16;[E];clsSapWS;;Catch Error!;Ex.Message:TABLE ZTWMS_JOBS_INFO [STRUCTURE ZWMS_JOBS_INFO]: cannot get value (array storing element values is null)
+Ex.Source:
+Ex.StackTrace:   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(String name)
+   in WM_Win_PanariaUSA.clsSapWS.Call_ZWS_GET_JOBS_GROUP_SINGLE(String inCodiceGruppoMissioni, String inNumeroConsegna, String inNumeroDocumentoMateriale, Boolean inShowOnlyActive, String inUserId, String inLingua, Boolean& outExecutionOk, Boolean& outGroupFoundOk, DataTable& outDataTable, SapJobsGroupInfo& inSapJobsGroupInfo, SapFunctionError& outSapFunctionError, Boolean& outFoundGroupDeleted, Boolean inShowMessageBox) in C:\Net_Projects\WM_Mobile_PanariaUSA\WM_Win_Panaria_USA\clsSapWS.vb:riga 12675
+23/02/2018 13:02:18;[E];clsSapWS;;Catch Error!;Ex.Message:TABLE ZTWMS_JOBS_INFO [STRUCTURE ZWMS_JOBS_INFO]: cannot get value (array storing element values is null)
+Ex.Source:
+Ex.StackTrace:   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(String name)
+   in WM_Win_PanariaUSA.clsSapWS.Call_ZWS_GET_JOBS_GROUP_SINGLE(String inCodiceGruppoMissioni, String inNumeroConsegna, String inNumeroDocumentoMateriale, Boolean inShowOnlyActive, String inUserId, String inLingua, Boolean& outExecutionOk, Boolean& outGroupFoundOk, DataTable& outDataTable, SapJobsGroupInfo& inSapJobsGroupInfo, SapFunctionError& outSapFunctionError, Boolean& outFoundGroupDeleted, Boolean inShowMessageBox) in C:\Net_Projects\WM_Mobile_PanariaUSA\WM_Win_Panaria_USA\clsSapWS.vb:riga 12675
+23/02/2018 13:02:20;[E];clsSapWS;;Catch Error!;Ex.Message:TABLE ZTWMS_JOBS_INFO [STRUCTURE ZWMS_JOBS_INFO]: cannot get value (array storing element values is null)
+Ex.Source:
+Ex.StackTrace:   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(String name)
+   in WM_Win_PanariaUSA.clsSapWS.Call_ZWS_GET_JOBS_GROUP_SINGLE(String inCodiceGruppoMissioni, String inNumeroConsegna, String inNumeroDocumentoMateriale, Boolean inShowOnlyActive, String inUserId, String inLingua, Boolean& outExecutionOk, Boolean& outGroupFoundOk, DataTable& outDataTable, SapJobsGroupInfo& inSapJobsGroupInfo, SapFunctionError& outSapFunctionError, Boolean& outFoundGroupDeleted, Boolean inShowMessageBox) in C:\Net_Projects\WM_Mobile_PanariaUSA\WM_Win_Panaria_USA\clsSapWS.vb:riga 12675
+23/02/2018 14:36:41;[E];clsSapWS;;Catch Error!;Ex.Message:TABLE ZTWMS_JOBS_INFO [STRUCTURE ZWMS_JOBS_INFO]: cannot get value (array storing element values is null)
+Ex.Source:
+Ex.StackTrace:   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(String name)
+   in WM_Win_PanariaUSA.clsSapWS.Call_ZWS_GET_JOBS_GROUP_SINGLE(String inCodiceGruppoMissioni, String inNumeroConsegna, String inNumeroDocumentoMateriale, Boolean inShowOnlyActive, String inUserId, String inLingua, Boolean& outExecutionOk, Boolean& outGroupFoundOk, DataTable& outDataTable, SapJobsGroupInfo& inSapJobsGroupInfo, SapFunctionError& outSapFunctionError, Boolean& outFoundGroupDeleted, Boolean inShowMessageBox) in C:\Net_Projects\WM_Mobile_PanariaUSA\WM_Win_Panaria_USA\clsSapWS.vb:riga 12675
+23/02/2018 14:36:48;[E];clsSapWS;;Catch Error!;Ex.Message:TABLE ZTWMS_JOBS_INFO [STRUCTURE ZWMS_JOBS_INFO]: cannot get value (array storing element values is null)
+Ex.Source:
+Ex.StackTrace:   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index, Boolean create)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(Int32 index)
+   in SAP.Middleware.Connector.RfcDataContainer`1.GetStructure(String name)
+   in WM_Win_PanariaUSA.clsSapWS.Call_ZWS_GET_JOBS_GROUP_SINGLE(String inCodiceGruppoMissioni, String inNumeroConsegna, String inNumeroDocumentoMateriale, Boolean inShowOnlyActive, String inUserId, String inLingua, Boolean& outExecutionOk, Boolean& outGroupFoundOk, DataTable& outDataTable, SapJobsGroupInfo& inSapJobsGroupInfo, SapFunctionError& outSapFunctionError, Boolean& outFoundGroupDeleted, Boolean inShowMessageBox) in C:\Net_Projects\WM_Mobile_PanariaUSA\WM_Win_Panaria_USA\clsSapWS.vb:riga 12675
+23/02/2018 15:46:47;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123119 Utente : PALTRY Fine - Elab. : 2,0940422 secs;
+23/02/2018 15:48:08;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123119 Utente : PALTRY Fine - Elab. : 4,2550863 secs;
+23/02/2018 15:48:19;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123119 Utente : PALTRY Fine - Elab. : 2,4260498 secs;
+23/02/2018 15:49:24;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 121751 Utente : PALTRY Fine - Elab. : 1,4910299 secs;
+23/02/2018 15:49:31;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 121751 Utente : PALTRY Fine - Elab. : 3,1410653 secs;
+23/02/2018 15:50:48;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123119 Utente : PALTRY Fine - Elab. : 3,2520652 secs;
+23/02/2018 15:51:15;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123119 Utente : PALTRY Fine - Elab. : 3,5540714 secs;
+23/02/2018 15:51:38;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123119 Utente : PALTRY Fine - Elab. : 2,342047 secs;
+23/02/2018 18:04:32;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123125 Utente : PALTRY Fine - Elab. : 1,7130345 secs;
+23/02/2018 18:04:43;[L];frmPickingMerci_Code_7_ConfQta;;NrWmsJobs : 123125 Utente : PALTRY Fine - Elab. : 1,4050325 secs;
+23/02/2018 18:04:49;[L];frmPickingMerci_Code_DropUDS;;NrWmsJobs : 123125 Utente : PALTRY Fine - Elab. : 2,7050545 secs;

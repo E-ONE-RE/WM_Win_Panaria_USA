@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///C:/Net_Projects/WM_Mobile_PanariaUSA/Web_Services/ZWS_MB_GET_LQUA_GIACENZE/ZWS_MB_GET_LQUA_GIACENZE_PUSA_DEV_100.XML" filename="ZWS_MB_GET_LQUA_GIACENZE_PUSA_DEV_100.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

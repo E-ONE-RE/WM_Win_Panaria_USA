@@ -1,0 +1,3342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CE57A82-F366-4713-850C-6C14066D50A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>WM_Win_PanariaUSA</RootNamespace>
+    <AssemblyName>WM_Win_PanariaUSA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\10.134.175.150\fti\WMS_Setup\ECQ\Setup_Win\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\10.134.175.150\fti\WMS_Setup\ECQ\Setup_Win\</InstallUrl>
+    <UpdateUrl>\\10.134.175.150\fti\WMS_Setup\ECQ\Setup_Win\</UpdateUrl>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>683</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <OutputPath>.\</OutputPath>
+    <DocumentationFile>WM_Win_PanariaUSA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>0</WarningLevel>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <DefineConstants>APPLICAZIONE_WIN32="SI"</DefineConstants>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>codeanalysis_20161212.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WM_Win_PanariaUSA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A16F8CAD39950C6DF0ED8847FCEC0A003C3BA946</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WM_Win_PanariaUSA_TemporaryKey_5y.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_WM_eOne_16x16.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="sapnco, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\sapnco.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco_utils, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\sapnco_utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="clsActionTimeInfo.vb" />
+    <Compile Include="clsAppParameters.vb" />
+    <Compile Include="clsAppTranslation.vb" />
+    <Compile Include="clsBloccoMovMM.vb" />
+    <Compile Include="clsBusinessLogic.vb" />
+    <Compile Include="clsConfUsrInput.vb" />
+    <Compile Include="clsDataGridFormatCellEventArgs.vb" />
+    <Compile Include="clsDataType.vb" />
+    <Compile Include="clsEMFromJob.vb" />
+    <Compile Include="clsEMFromStock.vb" />
+    <Compile Include="clsFile.vb" />
+    <Compile Include="clsFileGenericLog.vb" />
+    <Compile Include="clsFileLog.vb" />
+    <Compile Include="clsChangeUDS.vb" />
+    <Compile Include="clsInfoMotiviMov.vb" />
+    <Compile Include="clsTaskLines.vb" />
+    <Compile Include="clsUDS.vb" />
+    <Compile Include="clsMonitor.vb" />
+    <Compile Include="clsForkLift.vb" />
+    <Compile Include="clsFormattableTextBoxColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clsHookKeys.vb" />
+    <Compile Include="clsInfoCodiceMateriale.vb" />
+    <Compile Include="clsInfoDisponibilitaMateriale.vb" />
+    <Compile Include="clsInfoGiacenze.vb" />
+    <Compile Include="clsInfoInputDestination.vb" />
+    <Compile Include="clsInfoMappaUbicazioni.vb" />
+    <Compile Include="clsInfoSystem.vb" />
+    <Compile Include="clsInfoTipiMagazzino.vb" />
+    <Compile Include="clsInfoUbicazione.vb" />
+    <Compile Include="clsInventarioUbicazione.vb" />
+    <Compile Include="clsMainApplication.vb" />
+    <Compile Include="clsMobileConfiguration.vb" />
+    <Compile Include="clsNavigation.vb" />
+    <Compile Include="clsObject.vb" />
+    <Compile Include="clsPickCompOdP.vb" />
+    <Compile Include="clsProgramError.vb" />
+    <Compile Include="clsRegModStockE.vb" />
+    <Compile Include="clsSAPNetConn.vb" />
+    <Compile Include="clsSapUtility.vb" />
+    <Compile Include="clsSapWS.vb" />
+    <Compile Include="clsSelezioneCodiceMateriale.vb" />
+    <Compile Include="clsSelezioneNumeroConsegna.vb" />
+    <Compile Include="clsSelezionePartitaMateriale.vb" />
+    <Compile Include="clsSelezioneTipoMagazzino.vb" />
+    <Compile Include="clsSelezioneUbicazione.vb" />
+    <Compile Include="clsSelezioneUbicazioneSpunta.vb" />
+    <Compile Include="clsSelezioneUnitaMagazzino.vb" />
+    <Compile Include="clsShowUtility.vb" />
+    <Compile Include="clsMoveUDS.vb" />
+    <Compile Include="clsTruckLoad.vb" />
+    <Compile Include="clsTrasfMat.vb" />
+    <Compile Include="clsTrasfUbi.vb" />
+    <Compile Include="clsUscitaMerci.vb" />
+    <Compile Include="clsUscitaMerciConsegna.vb" />
+    <Compile Include="clsUscitaMerciOrdVendita.vb" />
+    <Compile Include="clsUser.vb" />
+    <Compile Include="clsUserGrants.vb" />
+    <Compile Include="clsUtil.vb" />
+    <Compile Include="clsUtility.vb" />
+    <Compile Include="clsTaskLinesAssigned.vb" />
+    <Compile Include="clsWmsJob.vb" />
+    <Compile Include="clsWmsJobsGroup.vb" />
+    <Compile Include="clsWsKeepAlive.vb" />
+    <Compile Include="clsXML.vb" />
+    <Compile Include="frmBloccoMovMM_Part_1.designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_2.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_Materiale.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_3_Materiale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_Materiale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_MaterialeUbicazione.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_3_MaterialeUbicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_MaterialeUbicazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_Ubicazione.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_3_Ubicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_Ubicazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_UM.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_3_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_3_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_4_SelStock.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_4_SelStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_4_SelStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_5.Designer.vb">
+      <DependentUpon>frmBloccoMovMM_Part_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloccoMovMM_Part_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_1_CodMis.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_1_CodMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_1_CodMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_1_SelMis.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_1_SelMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_1_SelMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_2_Ubi_e_UM_Origine.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_2_Ubi_e_UM_Origine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_2_Ubi_e_UM_Origine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_3_SelStock.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_3_SelStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_3_SelStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_4_ConfQta.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_4_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_4_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_5_Sel_UbiDestinazione.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_5_Sel_UbiDestinazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_5_Sel_UbiDestinazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_5_Ubi_UM_Dest.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_5_Ubi_UM_Dest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_5_Ubi_UM_Dest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_X_PickLogic.Designer.vb">
+      <DependentUpon>frmDisaccantonaMerci_X_PickLogic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisaccantonaMerci_X_PickLogic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJobList_Part_1_Filter.Designer.vb">
+      <DependentUpon>frmEM_FromJobList_Part_1_Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJobList_Part_1_Filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJobList_Part_2_JobGroupList.Designer.vb">
+      <DependentUpon>frmEM_FromJobList_Part_2_JobGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJobList_Part_2_JobGroupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_6_Sel_UMOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_6_Sel_UMOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_6_Sel_UMOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_InsLocation.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_InsLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_InsLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_InsPalletId.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_InsPalletId.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_InsPalletId.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_TaskLinesAssigned.Designer.vb">
+      <DependentUpon>frmPickingMerci_TaskLinesAssigned.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_TaskLinesAssigned.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintLabelKTag.Designer.vb">
+      <DependentUpon>frmPrintLabelKTag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintLabelKTag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintLabelUds.Designer.vb">
+      <DependentUpon>frmPrintLabelUds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintLabelUds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintLabelUdc.Designer.vb">
+      <DependentUpon>frmPrintLabelUdc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintLabelUdc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassRequest.Designer.vb">
+      <DependentUpon>frmPassRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_Trasf_SelUbiSpunta.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_1_Trasf_SelUbiSpunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_Trasf_SelUbiSpunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_1_SelUbiSpunta.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_1_SelUbiSpunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_1_SelUbiSpunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_2_CodMis.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_2_CodMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_2_CodMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_2_DocMat.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_2_DocMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_2_DocMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_3_SelMis.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_3_SelMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_3_SelMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_4_ConfQta.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_4_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_4_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_5_FinalUbiConfirm.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_5_FinalUbiConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_5_FinalUbiConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_5_FinalUMConfirm.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_5_FinalUMConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_5_FinalUMConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_5_FinalUMUbiConfirm.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_5_FinalUMUbiConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_5_FinalUMUbiConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_ChiudiLista.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_ChiudiLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_ChiudiLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_Funzioni.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_Funzioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_Funzioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_ShowStock.Designer.vb">
+      <DependentUpon>frmEM_FromJob_Part_ShowStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromJob_Part_ShowStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_Odp.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_1_Odp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_Odp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_Trasf_UM.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_1_Trasf_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_Trasf_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_TrasfConfirmMov.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_4_TrasfConfirmMov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_TrasfConfirmMov.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_5_Trasf_ConfirmSKU.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_5_Trasf_ConfirmSKU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_5_Trasf_ConfirmSKU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_5_ConfirmSKU.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_5_ConfirmSKU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_5_ConfirmSKU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_UM.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_1_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_1_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_3_ConfQta.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_3_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_3_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_ConfirmMovTrasf.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_4_ConfirmMovTrasf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_ConfirmMovTrasf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_ConfirmUbiDest.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_4_ConfirmUbiDest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_ConfirmUbiDest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_ConfirmUM.Designer.vb">
+      <DependentUpon>frmEM_FromStock_Part_4_ConfirmUM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_FromStock_Part_4_ConfirmUM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_StockList_Part_1_Filter.Designer.vb">
+      <DependentUpon>frmEM_StockList_Part_1_Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_StockList_Part_1_Filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEM_StockList_Part_2_List_Giacenze.Designer.vb">
+      <DependentUpon>frmEM_StockList_Part_2_List_Giacenze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEM_StockList_Part_2_List_Giacenze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoCodiceMateriale_1.Designer.vb">
+      <DependentUpon>frmInfoCodiceMateriale_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoCodiceMateriale_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoCodiceMateriale_2_List.Designer.vb">
+      <DependentUpon>frmInfoCodiceMateriale_2_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoCodiceMateriale_2_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoCodiceMateriale_3_Details.Designer.vb">
+      <DependentUpon>frmInfoCodiceMateriale_3_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoCodiceMateriale_3_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDatiGiacenza.Designer.vb">
+      <DependentUpon>frmInfoDatiGiacenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDatiGiacenza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDatiSpedizione.Designer.vb">
+      <DependentUpon>frmInfoDatiSpedizione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDatiSpedizione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDatiUbicazione.Designer.vb">
+      <DependentUpon>frmInfoDatiUbicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDatiUbicazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDisponibilitaMateriale_1.Designer.vb">
+      <DependentUpon>frmInfoDisponibilitaMateriale_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDisponibilitaMateriale_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDisponibilitaMateriale_2_List.Designer.vb">
+      <DependentUpon>frmInfoDisponibilitaMateriale_2_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDisponibilitaMateriale_2_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDisponibilitaMateriale_3_Details.Designer.vb">
+      <DependentUpon>frmInfoDisponibilitaMateriale_3_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDisponibilitaMateriale_3_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoForkLift.Designer.vb">
+      <DependentUpon>frmInfoForkLift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoForkLift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_1_CodiceMateriale.Designer.vb">
+      <DependentUpon>frmInfoGiacenze_1_CodiceMateriale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_1_CodiceMateriale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_1_Ubicazione.Designer.vb">
+      <DependentUpon>frmInfoGiacenze_1_Ubicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_1_Ubicazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_1_UM.Designer.vb">
+      <DependentUpon>frmInfoGiacenze_1_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_1_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_2.Designer.vb">
+      <DependentUpon>frmInfoGiacenze_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_3_List.Designer.vb">
+      <DependentUpon>frmInfoGiacenze_3_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoGiacenze_3_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoJobGroup_Details.Designer.vb">
+      <DependentUpon>frmInfoJobGroup_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoJobGroup_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoJob_Details.Designer.vb">
+      <DependentUpon>frmInfoJob_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoJob_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoListaPicking.Designer.vb">
+      <DependentUpon>frmInfoListaPicking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoListaPicking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoMappaUbicazioni_1.Designer.vb">
+      <DependentUpon>frmInfoMappaUbicazioni_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoMappaUbicazioni_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoMappaUbicazioni_2.Designer.vb">
+      <DependentUpon>frmInfoMappaUbicazioni_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoMappaUbicazioni_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoSystem.Designer.vb">
+      <DependentUpon>frmInfoSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoTipiMag_1.Designer.vb">
+      <DependentUpon>frmInfoTipiMag_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoTipiMag_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoTipiMag_2.Designer.vb">
+      <DependentUpon>frmInfoTipiMag_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoTipiMag_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoUser.Designer.vb">
+      <DependentUpon>frmInfoUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_1_Ubicazione.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_1_Ubicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_1_Ubicazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_1_UbicazioneUM.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_1_UbicazioneUM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_1_UbicazioneUM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_1_UM.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_1_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_1_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_2_ConfCodMat.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_2_ConfCodMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_2_ConfCodMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_3_SelStock.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_3_SelStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_3_SelStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_4_ConfQta.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_4_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_4_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_4_ConsumoCentroCosto.Designer.vb">
+      <DependentUpon>frmInventarioUbicazione_4_ConsumoCentroCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioUbicazione_4_ConsumoCentroCosto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainHomeMenuWin.Designer.vb">
+      <DependentUpon>frmMainHomeMenuWin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainHomeMenuWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainHomeMenu.Designer.vb">
+      <DependentUpon>frmMainHomeMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainHomeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuBloccoMerci.Designer.vb">
+      <DependentUpon>frmMenuBloccoMerci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuBloccoMerci.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuCommesse.Designer.vb">
+      <DependentUpon>frmMenuCommesse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuCommesse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuDisaccantonamento.Designer.vb">
+      <DependentUpon>frmMenuDisaccantonamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuDisaccantonamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuEntrataMerci.Designer.vb">
+      <DependentUpon>frmMenuEntrataMerci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuEntrataMerci.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuInformazioni_1.Designer.vb">
+      <DependentUpon>frmMenuInformazioni_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuInformazioni_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuInformazioni_2.Designer.vb">
+      <DependentUpon>frmMenuInformazioni_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuInformazioni_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuInventario.Designer.vb">
+      <DependentUpon>frmMenuInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuStampaLabel.Designer.vb">
+      <DependentUpon>frmMenuStampaLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuStampaLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuTrasferMain.designer.vb">
+      <DependentUpon>frmMenuTrasferMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuTrasferMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUscitaMerciMainWin.Designer.vb">
+      <DependentUpon>frmMenuUscitaMerciMainWin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuUscitaMerciMainWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUscitaMerciMain.Designer.vb">
+      <DependentUpon>frmMenuUscitaMerciMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuUscitaMerciMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUscitaMerciOdp.Designer.vb">
+      <DependentUpon>frmMenuUscitaMerciOdp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuUscitaMerciOdp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUtilita_1.Designer.vb">
+      <DependentUpon>frmMenuUtilita_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuUtilita_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageForUser.designer.vb">
+      <DependentUpon>frmMessageForUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageForUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_1.Designer.vb">
+      <DependentUpon>frmMovimento_StockE_Part_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_2.Designer.vb">
+      <DependentUpon>frmMovimento_StockE_Part_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_3.Designer.vb">
+      <DependentUpon>frmMovimento_StockE_Part_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_4_InsertStockE.Designer.vb">
+      <DependentUpon>frmMovimento_StockE_Part_4_InsertStockE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_4_InsertStockE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_4_SelStock.Designer.vb">
+      <DependentUpon>frmMovimento_StockE_Part_4_SelStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimento_StockE_Part_4_SelStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_1_CodMis.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_1_CodMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_1_CodMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_2_SelMis.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_2_SelMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_2_SelMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_3_SelTipoOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_3_SelTipoOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_3_SelTipoOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Sel_MatnrOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_4_Sel_MatnrOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Sel_MatnrOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Sel_UbiOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_4_Sel_UbiOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Sel_UbiOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Sel_UMOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_4_Sel_UMOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Sel_UMOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Ubi_e_UM_Origine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_4_Ubi_e_UM_Origine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_4_Ubi_e_UM_Origine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_5_SelStock.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_5_SelStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_5_SelStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_6_ConfQta.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_6_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_6_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_7_Sel_UbiDestinazione.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_7_Sel_UbiDestinazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_7_Sel_UbiDestinazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_7_Sel_UMDestinazione.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_7_Sel_UMDestinazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_7_Sel_UMDestinazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_7_Ubi_UM_Dest.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_7_Ubi_UM_Dest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_7_Ubi_UM_Dest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_8_Rietichettatura.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_8_Rietichettatura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_8_Rietichettatura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_ChiudiLista.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_ChiudiLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_ChiudiLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Fork_DropUDS.Designer.vb">
+      <DependentUpon>frmPickingMerci_Fork_DropUDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Fork_DropUDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_Funzioni.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_Funzioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_Funzioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_Funzioni.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_Funzioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_Funzioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_SelStockDestinazione.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_SelStockDestinazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_SelStockDestinazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_SelStockOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_SelStockOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_SelStockOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_X_PickLogic.Designer.vb">
+      <DependentUpon>frmPickingMerci_Appr_X_PickLogic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Appr_X_PickLogic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_Union_UM.Designer.vb">
+      <DependentUpon>frmPickingMerci_ChangeUDS_Union_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_Union_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_Add_UM_Sel.Designer.vb">
+      <DependentUpon>frmPickingMerci_ChangeUDS_Add_UM_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_Add_UM_Sel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_1_Settings.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_1_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_1_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_2_SelMis.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_2_SelMis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_2_SelMis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_Minus_UM_Sel.Designer.vb">
+      <DependentUpon>frmPickingMerci_ChangeUDS_Minus_UM_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_Minus_UM_Sel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_3_SelUDS.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_3_SelUDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_3_SelUDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_4_Sel_UMOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_4_Sel_UMOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_4_Sel_UMOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_5_Sel_CodMatOrigine.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_5_Sel_CodMatOrigine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_5_Sel_CodMatOrigine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_7_ConfQta.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_7_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_7_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_DropUDS.Designer.vb">
+      <DependentUpon>frmPickingMerci_Code_DropUDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_Code_DropUDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_JobGroupDetails.Designer.vb">
+      <DependentUpon>frmPickingMerci_JobGroupDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_JobGroupDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_JobGroupList.Designer.vb">
+      <DependentUpon>frmPickingMerci_JobGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_JobGroupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_1_UM_Ori.Designer.vb">
+      <DependentUpon>frmPickingMerci_ChangeUDS_1_UM_Ori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_1_UM_Ori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_2_UM_Oper.Designer.vb">
+      <DependentUpon>frmPickingMerci_ChangeUDS_2_UM_Oper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_ChangeUDS_2_UM_Oper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_ShowStockInfo.Designer.vb">
+      <DependentUpon>frmPickingMerci_ShowStockInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_ShowStockInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUbicazioneSpecial.designer.vb">
+      <DependentUpon>frmSelectUbicazioneSpecial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUbicazioneSpecial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUDCJobsMoveList.Designer.vb">
+      <DependentUpon>frmUDCJobsMoveList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUDCJobsMoveList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUDSJobsMoveList.Designer.vb">
+      <DependentUpon>frmUDSJobsMoveList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUDSJobsMoveList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUbicazioneDropUDS.designer.vb">
+      <DependentUpon>frmSelectUbicazioneDropUDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUbicazioneDropUDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruckLoad_2_UBI_Dest.Designer.vb">
+      <DependentUpon>frmTruckLoad_2_UBI_Dest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruckLoad_2_UBI_Dest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruckLoad_1_UM_Sel.Designer.vb">
+      <DependentUpon>frmTruckLoad_1_UM_Sel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruckLoad_1_UM_Sel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingOdP_OdP_1.Designer.vb">
+      <DependentUpon>frmPickingOdP_OdP_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingOdP_OdP_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingOdP_UM_2.Designer.vb">
+      <DependentUpon>frmPickingOdP_UM_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingOdP_UM_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintPalletCard_1_UM.Designer.vb">
+      <DependentUpon>frmPrintPalletCard_1_UM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintPalletCard_1_UM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCodiceMateriale.designer.vb">
+      <DependentUpon>frmSelectCodiceMateriale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCodiceMateriale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectForkLift.Designer.vb">
+      <DependentUpon>frmSelectForkLift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectForkLift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPartitaMateriale.designer.vb">
+      <DependentUpon>frmSelectPartitaMateriale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPartitaMateriale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectTipoMagazzino.designer.vb">
+      <DependentUpon>frmSelectTipoMagazzino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectTipoMagazzino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUbicazione.designer.vb">
+      <DependentUpon>frmSelectUbicazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUbicazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUbicazioneSpunta.Designer.vb">
+      <DependentUpon>frmSelectUbicazioneSpunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUbicazioneSpunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUnitaMagazzino.Designer.vb">
+      <DependentUpon>frmSelectUnitaMagazzino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUnitaMagazzino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUserPickQueues.Designer.vb">
+      <DependentUpon>frmSelectUserPickQueues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUserPickQueues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUserTipiMag.Designer.vb">
+      <DependentUpon>frmSelectUserTipiMag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUserTipiMag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_1.Designer.vb">
+      <DependentUpon>frmTRASF_MAT_Part_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_2_ConfCodMat.Designer.vb">
+      <DependentUpon>frmTRASF_MAT_Part_2_ConfCodMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_2_ConfCodMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_3_SelStock.Designer.vb">
+      <DependentUpon>frmTRASF_MAT_Part_3_SelStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_3_SelStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_4_ConfQta.Designer.vb">
+      <DependentUpon>frmTRASF_MAT_Part_4_ConfQta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_4_ConfQta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_6_Final_Confirm.Designer.vb">
+      <DependentUpon>frmTRASF_MAT_Part_6_Final_Confirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_6_Final_Confirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_ShowStock.Designer.vb">
+      <DependentUpon>frmTRASF_MAT_Part_ShowStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_MAT_Part_ShowStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_UBI_Part_1.Designer.vb">
+      <DependentUpon>frmTRASF_UBI_Part_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_UBI_Part_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_UBI_Part_2.Designer.vb">
+      <DependentUpon>frmTRASF_UBI_Part_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_UBI_Part_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_MoveUDS_1_UM_Ori.Designer.vb">
+      <DependentUpon>frmPickingMerci_MoveUDS_1_UM_Ori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_MoveUDS_1_UM_Ori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_UM_Part_1_UM_Ori.Designer.vb">
+      <DependentUpon>frmTRASF_UM_Part_1_UM_Ori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_UM_Part_1_UM_Ori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickingMerci_MoveUDS_2_UBI_Dest.Designer.vb">
+      <DependentUpon>frmPickingMerci_MoveUDS_2_UBI_Dest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPickingMerci_MoveUDS_2_UBI_Dest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_UM_Part_2_UBI_Dest.Designer.vb">
+      <DependentUpon>frmTRASF_UM_Part_2_UBI_Dest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_UM_Part_2_UBI_Dest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRASF_UM_Part_2_UM_Dest.Designer.vb">
+      <DependentUpon>frmTRASF_UM_Part_2_UM_Dest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRASF_UM_Part_2_UM_Dest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlConstants.vb" />
+    <Compile Include="mdlGlobalVariables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_JOBGROUP_OK_X_CLOSE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_JOBSGROUP_MATNR_OK\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_JOBS_GROUP_LAST_SEQ\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_JOBS_OK_FOR_ACTION\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_PICK_ALL_SU\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_STOCK_AND_GET_DEST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CHECK_UDC_JOBS_DEST_OK\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_APPLICATION_PARAMS\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_APP_TRANSLATION\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_FORKLIFT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_JOBSGROUP_EXE_SUMMARY\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_JOBS_GROUP_LIST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_JOBS_GROUP_SINGLE_MB\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_JOBS_LIST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_JOBS_SINGLE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_JOB_GROUP_EXEC_INFO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_MATNR_PARTITE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_UBI_SPUNTA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GET_USERS_PROF_LGTYP\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_JOB_EM_STEPS_EXECUTED\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_JOB_STEPS_EXECUTED\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_CONNECTION\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_DOCMAT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_LENUM_GIACENZA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_LENUM_WITH_LGPLA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_LGPLA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_MATERIAL_EXIST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_MATNR_ANA_FABBISO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_MULTIPLE_LENUM\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_ODP\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_ORDINE_VENDITA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CHECK_STOCK_GIACENZA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_CREA_UBICAZIONE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU_MUL\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_EXEC_WM_WMS_TO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_COMMESSE_DOCMAT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_DOCMAT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_DOCMAT_CONFIRM_QTY\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_DOCMAT_POS_DA_CONF\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_LGTYP_LIST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_LQUA_GIACENZE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_MATERIAL_DESCR\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_MATERIAL_DISPONIBIL\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_MATERIAL_LIST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_MATNR_INPUT_DEST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_ODA_INPUT_DEST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_SU_INFO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_SYSTEM_INFO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_UBICAZIONI_INFO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_WM_INPUT_DEST_BASIC\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_WM_OUT_DEST_BASIC\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GET_WM_OUT_ORI_BASIC\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GOODSMVT_CREATE_MB11\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GOODSMVT_CREATE_MB11_Q\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_GOODSMVT_CREATE_MB1B\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_PRODORD_GET_DETAIL\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MB_RF_LOGIN\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SET_JOBSGROUP_ACTIVATE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SET_JOBSGROUP_CLOSED\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SET_JOBSGROUP_UBI_DEST\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SET_JOB_CARRELLISTA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SET_JOB_STATUS_FORCED_END\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SET_JOB_STEP_FORCED_NEXT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_1.resx">
+      <DependentUpon>frmBloccoMovMM_Part_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_2.resx">
+      <DependentUpon>frmBloccoMovMM_Part_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_3_Materiale.resx">
+      <DependentUpon>frmBloccoMovMM_Part_3_Materiale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_3_MaterialeUbicazione.resx">
+      <DependentUpon>frmBloccoMovMM_Part_3_MaterialeUbicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_3_Ubicazione.resx">
+      <DependentUpon>frmBloccoMovMM_Part_3_Ubicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_3_UM.resx">
+      <DependentUpon>frmBloccoMovMM_Part_3_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_4_SelStock.resx">
+      <DependentUpon>frmBloccoMovMM_Part_4_SelStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloccoMovMM_Part_5.resx">
+      <DependentUpon>frmBloccoMovMM_Part_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_1_CodMis.resx">
+      <DependentUpon>frmDisaccantonaMerci_1_CodMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_1_SelMis.resx">
+      <DependentUpon>frmDisaccantonaMerci_1_SelMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_2_Ubi_e_UM_Origine.resx">
+      <DependentUpon>frmDisaccantonaMerci_2_Ubi_e_UM_Origine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_3_SelStock.resx">
+      <DependentUpon>frmDisaccantonaMerci_3_SelStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_4_ConfQta.resx">
+      <DependentUpon>frmDisaccantonaMerci_4_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_5_Sel_UbiDestinazione.resx">
+      <DependentUpon>frmDisaccantonaMerci_5_Sel_UbiDestinazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_5_Ubi_UM_Dest.resx">
+      <DependentUpon>frmDisaccantonaMerci_5_Ubi_UM_Dest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisaccantonaMerci_X_PickLogic.resx">
+      <DependentUpon>frmDisaccantonaMerci_X_PickLogic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJobList_Part_1_Filter.resx">
+      <DependentUpon>frmEM_FromJobList_Part_1_Filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJobList_Part_2_JobGroupList.resx">
+      <DependentUpon>frmEM_FromJobList_Part_2_JobGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_6_Sel_UMOrigine.resx">
+      <DependentUpon>frmPickingMerci_Code_6_Sel_UMOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_InsLocation.resx">
+      <DependentUpon>frmPickingMerci_Code_InsLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_InsPalletId.resx">
+      <DependentUpon>frmPickingMerci_Code_InsPalletId.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_TaskLinesAssigned.resx">
+      <DependentUpon>frmPickingMerci_TaskLinesAssigned.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintLabelKTag.resx">
+      <DependentUpon>frmPrintLabelKTag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintLabelUds.resx">
+      <DependentUpon>frmPrintLabelUds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintLabelUdc.resx">
+      <DependentUpon>frmPrintLabelUdc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassRequest.resx">
+      <DependentUpon>frmPassRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_1_Trasf_SelUbiSpunta.resx">
+      <DependentUpon>frmEM_FromStock_Part_1_Trasf_SelUbiSpunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_1_SelUbiSpunta.resx">
+      <DependentUpon>frmEM_FromJob_Part_1_SelUbiSpunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_2_CodMis.resx">
+      <DependentUpon>frmEM_FromJob_Part_2_CodMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_2_DocMat.resx">
+      <DependentUpon>frmEM_FromJob_Part_2_DocMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_3_SelMis.resx">
+      <DependentUpon>frmEM_FromJob_Part_3_SelMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_4_ConfQta.resx">
+      <DependentUpon>frmEM_FromJob_Part_4_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_5_FinalUbiConfirm.resx">
+      <DependentUpon>frmEM_FromJob_Part_5_FinalUbiConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_5_FinalUMConfirm.resx">
+      <DependentUpon>frmEM_FromJob_Part_5_FinalUMConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_5_FinalUMUbiConfirm.resx">
+      <DependentUpon>frmEM_FromJob_Part_5_FinalUMUbiConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_ChiudiLista.resx">
+      <DependentUpon>frmEM_FromJob_Part_ChiudiLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_Funzioni.resx">
+      <DependentUpon>frmEM_FromJob_Part_Funzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromJob_Part_ShowStock.resx">
+      <DependentUpon>frmEM_FromJob_Part_ShowStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_1_Odp.resx">
+      <DependentUpon>frmEM_FromStock_Part_1_Odp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_1_Trasf_UM.resx">
+      <DependentUpon>frmEM_FromStock_Part_1_Trasf_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_4_TrasfConfirmMov.resx">
+      <DependentUpon>frmEM_FromStock_Part_4_TrasfConfirmMov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_5_Trasf_ConfirmSKU.resx">
+      <DependentUpon>frmEM_FromStock_Part_5_Trasf_ConfirmSKU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_5_ConfirmSKU.resx">
+      <DependentUpon>frmEM_FromStock_Part_5_ConfirmSKU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_1_UM.resx">
+      <DependentUpon>frmEM_FromStock_Part_1_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_3_ConfQta.resx">
+      <DependentUpon>frmEM_FromStock_Part_3_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_4_ConfirmMovTrasf.resx">
+      <DependentUpon>frmEM_FromStock_Part_4_ConfirmMovTrasf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_4_ConfirmUbiDest.resx">
+      <DependentUpon>frmEM_FromStock_Part_4_ConfirmUbiDest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_FromStock_Part_4_ConfirmUM.resx">
+      <DependentUpon>frmEM_FromStock_Part_4_ConfirmUM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_StockList_Part_1_Filter.resx">
+      <DependentUpon>frmEM_StockList_Part_1_Filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEM_StockList_Part_2_List_Giacenze.resx">
+      <DependentUpon>frmEM_StockList_Part_2_List_Giacenze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoCodiceMateriale_1.resx">
+      <DependentUpon>frmInfoCodiceMateriale_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoCodiceMateriale_2_List.resx">
+      <DependentUpon>frmInfoCodiceMateriale_2_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoCodiceMateriale_3_Details.resx">
+      <DependentUpon>frmInfoCodiceMateriale_3_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDatiGiacenza.resx">
+      <DependentUpon>frmInfoDatiGiacenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDatiSpedizione.resx">
+      <DependentUpon>frmInfoDatiSpedizione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDatiUbicazione.resx">
+      <DependentUpon>frmInfoDatiUbicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDisponibilitaMateriale_1.resx">
+      <DependentUpon>frmInfoDisponibilitaMateriale_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDisponibilitaMateriale_2_List.resx">
+      <DependentUpon>frmInfoDisponibilitaMateriale_2_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDisponibilitaMateriale_3_Details.resx">
+      <DependentUpon>frmInfoDisponibilitaMateriale_3_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoForkLift.resx">
+      <DependentUpon>frmInfoForkLift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoGiacenze_1_CodiceMateriale.resx">
+      <DependentUpon>frmInfoGiacenze_1_CodiceMateriale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoGiacenze_1_Ubicazione.resx">
+      <DependentUpon>frmInfoGiacenze_1_Ubicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoGiacenze_1_UM.resx">
+      <DependentUpon>frmInfoGiacenze_1_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoGiacenze_2.resx">
+      <DependentUpon>frmInfoGiacenze_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoGiacenze_3_List.resx">
+      <DependentUpon>frmInfoGiacenze_3_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoJobGroup_Details.resx">
+      <DependentUpon>frmInfoJobGroup_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoJob_Details.resx">
+      <DependentUpon>frmInfoJob_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoListaPicking.resx">
+      <DependentUpon>frmInfoListaPicking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoMappaUbicazioni_1.resx">
+      <DependentUpon>frmInfoMappaUbicazioni_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoMappaUbicazioni_2.resx">
+      <DependentUpon>frmInfoMappaUbicazioni_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoSystem.resx">
+      <DependentUpon>frmInfoSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoTipiMag_1.resx">
+      <DependentUpon>frmInfoTipiMag_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoTipiMag_2.resx">
+      <DependentUpon>frmInfoTipiMag_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoUser.resx">
+      <DependentUpon>frmInfoUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_1_Ubicazione.resx">
+      <DependentUpon>frmInventarioUbicazione_1_Ubicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_1_UbicazioneUM.resx">
+      <DependentUpon>frmInventarioUbicazione_1_UbicazioneUM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_1_UM.resx">
+      <DependentUpon>frmInventarioUbicazione_1_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_2_ConfCodMat.resx">
+      <DependentUpon>frmInventarioUbicazione_2_ConfCodMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_3_SelStock.resx">
+      <DependentUpon>frmInventarioUbicazione_3_SelStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_4_ConfQta.resx">
+      <DependentUpon>frmInventarioUbicazione_4_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioUbicazione_4_ConsumoCentroCosto.resx">
+      <DependentUpon>frmInventarioUbicazione_4_ConsumoCentroCosto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainHomeMenuWin.resx">
+      <DependentUpon>frmMainHomeMenuWin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainHomeMenu.resx">
+      <DependentUpon>frmMainHomeMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuBloccoMerci.resx">
+      <DependentUpon>frmMenuBloccoMerci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuCommesse.resx">
+      <DependentUpon>frmMenuCommesse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuDisaccantonamento.resx">
+      <DependentUpon>frmMenuDisaccantonamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuEntrataMerci.resx">
+      <DependentUpon>frmMenuEntrataMerci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuInformazioni_1.resx">
+      <DependentUpon>frmMenuInformazioni_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuInformazioni_2.resx">
+      <DependentUpon>frmMenuInformazioni_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuInventario.resx">
+      <DependentUpon>frmMenuInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuStampaLabel.resx">
+      <DependentUpon>frmMenuStampaLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuTrasferMain.resx">
+      <DependentUpon>frmMenuTrasferMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuUscitaMerciMainWin.resx">
+      <DependentUpon>frmMenuUscitaMerciMainWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuUscitaMerciMain.resx">
+      <DependentUpon>frmMenuUscitaMerciMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuUscitaMerciOdp.resx">
+      <DependentUpon>frmMenuUscitaMerciOdp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuUtilita_1.resx">
+      <DependentUpon>frmMenuUtilita_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageForUser.resx">
+      <DependentUpon>frmMessageForUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimento_StockE_Part_1.resx">
+      <DependentUpon>frmMovimento_StockE_Part_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimento_StockE_Part_2.resx">
+      <DependentUpon>frmMovimento_StockE_Part_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimento_StockE_Part_3.resx">
+      <DependentUpon>frmMovimento_StockE_Part_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimento_StockE_Part_4_InsertStockE.resx">
+      <DependentUpon>frmMovimento_StockE_Part_4_InsertStockE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimento_StockE_Part_4_SelStock.resx">
+      <DependentUpon>frmMovimento_StockE_Part_4_SelStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_1_CodMis.resx">
+      <DependentUpon>frmPickingMerci_Appr_1_CodMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_2_SelMis.resx">
+      <DependentUpon>frmPickingMerci_Appr_2_SelMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_3_SelTipoOrigine.resx">
+      <DependentUpon>frmPickingMerci_Appr_3_SelTipoOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_4_Sel_MatnrOrigine.resx">
+      <DependentUpon>frmPickingMerci_Appr_4_Sel_MatnrOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_4_Sel_UbiOrigine.resx">
+      <DependentUpon>frmPickingMerci_Appr_4_Sel_UbiOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_4_Sel_UMOrigine.resx">
+      <DependentUpon>frmPickingMerci_Appr_4_Sel_UMOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_4_Ubi_e_UM_Origine.resx">
+      <DependentUpon>frmPickingMerci_Appr_4_Ubi_e_UM_Origine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_5_SelStock.resx">
+      <DependentUpon>frmPickingMerci_Appr_5_SelStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_6_ConfQta.resx">
+      <DependentUpon>frmPickingMerci_Appr_6_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_7_Sel_UbiDestinazione.resx">
+      <DependentUpon>frmPickingMerci_Appr_7_Sel_UbiDestinazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_7_Sel_UMDestinazione.resx">
+      <DependentUpon>frmPickingMerci_Appr_7_Sel_UMDestinazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_7_Ubi_UM_Dest.resx">
+      <DependentUpon>frmPickingMerci_Appr_7_Ubi_UM_Dest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_8_Rietichettatura.resx">
+      <DependentUpon>frmPickingMerci_Appr_8_Rietichettatura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_ChiudiLista.resx">
+      <DependentUpon>frmPickingMerci_Appr_ChiudiLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Fork_DropUDS.resx">
+      <DependentUpon>frmPickingMerci_Fork_DropUDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_Funzioni.resx">
+      <DependentUpon>frmPickingMerci_Code_Funzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_Funzioni.resx">
+      <DependentUpon>frmPickingMerci_Appr_Funzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_SelStockDestinazione.resx">
+      <DependentUpon>frmPickingMerci_Appr_SelStockDestinazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_SelStockOrigine.resx">
+      <DependentUpon>frmPickingMerci_Appr_SelStockOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Appr_X_PickLogic.resx">
+      <DependentUpon>frmPickingMerci_Appr_X_PickLogic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_ChangeUDS_Union_UM.resx">
+      <DependentUpon>frmPickingMerci_ChangeUDS_Union_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_ChangeUDS_Add_UM_Sel.resx">
+      <DependentUpon>frmPickingMerci_ChangeUDS_Add_UM_Sel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_1_Settings.resx">
+      <DependentUpon>frmPickingMerci_Code_1_Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_2_SelMis.resx">
+      <DependentUpon>frmPickingMerci_Code_2_SelMis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_ChangeUDS_Minus_UM_Sel.resx">
+      <DependentUpon>frmPickingMerci_ChangeUDS_Minus_UM_Sel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_3_SelUDS.resx">
+      <DependentUpon>frmPickingMerci_Code_3_SelUDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_4_Sel_UMOrigine.resx">
+      <DependentUpon>frmPickingMerci_Code_4_Sel_UMOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_5_Sel_CodMatOrigine.resx">
+      <DependentUpon>frmPickingMerci_Code_5_Sel_CodMatOrigine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_7_ConfQta.resx">
+      <DependentUpon>frmPickingMerci_Code_7_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_Code_DropUDS.resx">
+      <DependentUpon>frmPickingMerci_Code_DropUDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_JobGroupDetails.resx">
+      <DependentUpon>frmPickingMerci_JobGroupDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_JobGroupList.resx">
+      <DependentUpon>frmPickingMerci_JobGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_ChangeUDS_1_UM_Ori.resx">
+      <DependentUpon>frmPickingMerci_ChangeUDS_1_UM_Ori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_ChangeUDS_2_UM_Oper.resx">
+      <DependentUpon>frmPickingMerci_ChangeUDS_2_UM_Oper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_ShowStockInfo.resx">
+      <DependentUpon>frmPickingMerci_ShowStockInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUbicazioneSpecial.resx">
+      <DependentUpon>frmSelectUbicazioneSpecial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUDCJobsMoveList.resx">
+      <DependentUpon>frmUDCJobsMoveList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUDSJobsMoveList.resx">
+      <DependentUpon>frmUDSJobsMoveList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUbicazioneDropUDS.resx">
+      <DependentUpon>frmSelectUbicazioneDropUDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruckLoad_2_UBI_Dest.resx">
+      <DependentUpon>frmTruckLoad_2_UBI_Dest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruckLoad_1_UM_Sel.resx">
+      <DependentUpon>frmTruckLoad_1_UM_Sel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingOdP_OdP_1.resx">
+      <DependentUpon>frmPickingOdP_OdP_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingOdP_UM_2.resx">
+      <DependentUpon>frmPickingOdP_UM_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintPalletCard_1_UM.resx">
+      <DependentUpon>frmPrintPalletCard_1_UM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCodiceMateriale.resx">
+      <DependentUpon>frmSelectCodiceMateriale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectForkLift.resx">
+      <DependentUpon>frmSelectForkLift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPartitaMateriale.resx">
+      <DependentUpon>frmSelectPartitaMateriale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectTipoMagazzino.resx">
+      <DependentUpon>frmSelectTipoMagazzino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUbicazione.resx">
+      <DependentUpon>frmSelectUbicazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUbicazioneSpunta.resx">
+      <DependentUpon>frmSelectUbicazioneSpunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUnitaMagazzino.resx">
+      <DependentUpon>frmSelectUnitaMagazzino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUserPickQueues.resx">
+      <DependentUpon>frmSelectUserPickQueues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUserTipiMag.resx">
+      <DependentUpon>frmSelectUserTipiMag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_MAT_Part_1.resx">
+      <DependentUpon>frmTRASF_MAT_Part_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_MAT_Part_2_ConfCodMat.resx">
+      <DependentUpon>frmTRASF_MAT_Part_2_ConfCodMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_MAT_Part_3_SelStock.resx">
+      <DependentUpon>frmTRASF_MAT_Part_3_SelStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_MAT_Part_4_ConfQta.resx">
+      <DependentUpon>frmTRASF_MAT_Part_4_ConfQta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_MAT_Part_6_Final_Confirm.resx">
+      <DependentUpon>frmTRASF_MAT_Part_6_Final_Confirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_MAT_Part_ShowStock.resx">
+      <DependentUpon>frmTRASF_MAT_Part_ShowStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_UBI_Part_1.resx">
+      <DependentUpon>frmTRASF_UBI_Part_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_UBI_Part_2.resx">
+      <DependentUpon>frmTRASF_UBI_Part_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_MoveUDS_1_UM_Ori.resx">
+      <DependentUpon>frmPickingMerci_MoveUDS_1_UM_Ori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_UM_Part_1_UM_Ori.resx">
+      <DependentUpon>frmTRASF_UM_Part_1_UM_Ori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPickingMerci_MoveUDS_2_UBI_Dest.resx">
+      <DependentUpon>frmPickingMerci_MoveUDS_2_UBI_Dest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_UM_Part_2_UBI_Dest.resx">
+      <DependentUpon>frmTRASF_UM_Part_2_UBI_Dest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRASF_UM_Part_2_UM_Dest.resx">
+      <DependentUpon>frmTRASF_UM_Part_2_UM_Dest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBGROUP_OK_X_CLOSE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBGROUP_OK_X_CLOSE\ZwmsCheckJobgroupOkXCloseResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBGROUP_OK_X_CLOSE\ZWS_CHECK_JOBGROUP_OK_X_CLOSE_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_CHECK_JOBSGROUP_MATNR_OK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBSGROUP_MATNR_OK\ZwmsCheckJobsgroupMatnrOkResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBSGROUP_MATNR_OK\ZWS_CHECK_JOBSGROUP_MATNR_OK_PUSA_TST_100.wsdl" />
+    <None Include="Web References\WS_CHECK_JOBS_GROUP_LAST_SEQ\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBS_GROUP_LAST_SEQ\ZwmsCheckJobsGroupLastSeqResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBS_GROUP_LAST_SEQ\ZWS_CHECK_JOBS_GROUP_LAST_SEQ_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_CHECK_JOBS_OK_FOR_ACTION\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBS_OK_FOR_ACTION\ZwmsCheckJobsOkForActionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_JOBS_OK_FOR_ACTION\ZWS_CHECK_JOBS_OK_FOR_ACTION_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_CHECK_PICK_ALL_SU\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_PICK_ALL_SU\ZwmCheckPickAllSuResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_PICK_ALL_SU\ZWS_CHECK_PICK_ALL_SU_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_CHECK_STOCK_AND_GET_DEST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_STOCK_AND_GET_DEST\ZwmCheckStockAndGetDestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_STOCK_AND_GET_DEST\ZWS_CHECK_STOCK_AND_GET_DEST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_CHECK_UDC_JOBS_DEST_OK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CHECK_UDC_JOBS_DEST_OK\ZwmsCheckUdcJobsDestOkResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CHECK_UDC_JOBS_DEST_OK\ZWS_CHECK_UDC_JOBS_DEST_OK_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_APPLICATION_PARAMS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_APPLICATION_PARAMS\ZwmsGetApplicationParamsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_APPLICATION_PARAMS\ZWS_GET_APPLICATION_PARAMS_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_APP_TRANSLATION\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_APP_TRANSLATION\ZwmsGetAppTranslationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_APP_TRANSLATION\ZWS_GET_APP_TRANSLATION_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_FORKLIFT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_FORKLIFT\ZwmsGetForkliftResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_FORKLIFT\ZWS_GET_FORKLIFT_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_JOBSGROUP_EXE_SUMMARY\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_JOBSGROUP_EXE_SUMMARY\ZwmsGetJobsgroupExeSummaryResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_JOBSGROUP_EXE_SUMMARY\ZWS_GET_JOBSGROUP_EXE_SUMMARY_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_JOBS_GROUP_LIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_GROUP_LIST\ZwmsGetJobsGroupListResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_GROUP_LIST\ZWS_GET_JOBS_GROUP_LIST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_JOBS_GROUP_SINGLE_MB\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_GROUP_SINGLE_MB\ZwmsGetJobsGroupSingleMbResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_GROUP_SINGLE_MB\ZWS_GET_JOBS_GROUP_SINGLE_MB_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_JOBS_LIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_LIST\ZwmsGetJobsListResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_LIST\ZWS_GET_JOBS_LIST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_JOBS_SINGLE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_SINGLE\ZwmsGetJobsSingleResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_JOBS_SINGLE\ZWS_GET_JOBS_SINGLE_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_JOB_GROUP_EXEC_INFO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_JOB_GROUP_EXEC_INFO\ZwmsGetJobGroupExecInfoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_JOB_GROUP_EXEC_INFO\ZWS_GET_JOB_GROUP_EXEC_INFO_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_MATNR_PARTITE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_MATNR_PARTITE\ZmbGetMatnrPartiteResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_MATNR_PARTITE\ZWS_GET_MATNR_PARTITE_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_UBI_SPUNTA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_UBI_SPUNTA\ZwmsGetUbiSpuntaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_UBI_SPUNTA\ZWS_GET_UBI_SPUNTA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_GET_USERS_PROF_LGTYP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_GET_USERS_PROF_LGTYP\ZwmsGetUsersProfLgtypResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_GET_USERS_PROF_LGTYP\ZWS_GET_USERS_PROF_LGTYP_DEV_100.wsdl" />
+    <None Include="Web References\WS_JOB_EM_STEPS_EXECUTED\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_JOB_EM_STEPS_EXECUTED\ZwmsJobEmStepsExecutedResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_JOB_EM_STEPS_EXECUTED\ZWS_JOB_EM_STEPS_EXECUTED_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_JOB_STEPS_EXECUTED\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_JOB_STEPS_EXECUTED\ZwmsJobStepsExecutedResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_JOB_STEPS_EXECUTED\ZWS_JOB_STEPS_EXECUTED_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_CONNECTION\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_CONNECTION\ZwmMbCheckConnectionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_CONNECTION\ZWS_MB_CHECK_CONNECTION_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_DOCMAT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_DOCMAT\ZwmMbCheckDocmatResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_DOCMAT\ZWS_MB_CHECK_DOCMAT_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_LENUM_GIACENZA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_LENUM_GIACENZA\ZwmMbCheckLenumGiacenzaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_LENUM_GIACENZA\ZWS_MB_CHECK_LENUM_GIACENZA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_LENUM_WITH_LGPLA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_LENUM_WITH_LGPLA\ZwmMbCheckLenumWithLgplaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_LENUM_WITH_LGPLA\ZWS_MB_CHECK_LENUM_WITH_LGPLA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_LGPLA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_LGPLA\ZwmMbCheckLgplaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_LGPLA\ZWS_MB_CHECK_LGPLA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_MATERIAL_EXIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_MATERIAL_EXIST\ZwmMbCheckMaterialExistResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_MATERIAL_EXIST\ZWS_MB_CHECK_MATERIAL_EXIST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_MATNR_ANA_FABBISO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_MATNR_ANA_FABBISO\ZwmMbCheckMatnrAnaFabbisoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_MATNR_ANA_FABBISO\ZWS_MB_CHECK_MATNR_ANA_FABBISO_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_MULTIPLE_LENUM\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_MULTIPLE_LENUM\ZwmMbCheckMultipleLenumResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_MULTIPLE_LENUM\ZWS_MB_CHECK_MULTIPLE_LENUM_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_ODP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_ODP\ZwmMbCheckOdpResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_ODP\ZWS_MB_CHECK_ODP_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_ORDINE_VENDITA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_ORDINE_VENDITA\ZwmMbCheckOrdineVenditaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_ORDINE_VENDITA\ZWS_MB_CHECK_ORDINE_VENDITA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CHECK_STOCK_GIACENZA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_STOCK_GIACENZA\ZwmMbCheckStockGiacenzaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CHECK_STOCK_GIACENZA\ZWS_MB_CHECK_STOCK_GIACENZA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_CREA_UBICAZIONE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_CREA_UBICAZIONE\ZwmMbCreaUbicazioneResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_CREA_UBICAZIONE\ZWS_MB_CREA_UBICAZIONE_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU\ZwmMbExecWmToMoveSuResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU\ZWS_MB_EXEC_WM_TO_MOVE_SU_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU_MUL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU_MUL\ZwmMbExecWmToMoveSuMulResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_EXEC_WM_TO_MOVE_SU_MUL\ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL_PUSA_SBX_100.wsdl" />
+    <None Include="Web References\WS_MB_EXEC_WM_WMS_TO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_EXEC_WM_WMS_TO\ZwmMbExecWmWmsToResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_EXEC_WM_WMS_TO\ZWS_MB_EXEC_WM_WMS_TO_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_COMMESSE_DOCMAT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_COMMESSE_DOCMAT\ZwmMbGetCommesseDocmatResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_COMMESSE_DOCMAT\ZWS_MB_GET_COMMESSE_DOCMAT_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_DOCMAT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_DOCMAT\ZwmMbGetDocmatResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_DOCMAT\ZWS_MB_GET_DOCMAT_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_DOCMAT_CONFIRM_QTY\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_DOCMAT_CONFIRM_QTY\ZwmMbGetDocmatConfirmQtyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_DOCMAT_CONFIRM_QTY\ZWS_MB_GET_DOCMAT_CONFIRM_QTY_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_DOCMAT_POS_DA_CONF\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_DOCMAT_POS_DA_CONF\ZwmMbGetDocmatPosDaConfResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_DOCMAT_POS_DA_CONF\ZWS_MB_GET_DOCMAT_POS_DA_CONF_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_LGTYP_LIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_LGTYP_LIST\ZwmMbGetLgtypListResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_LGTYP_LIST\ZWS_MB_GET_LGTYP_LIST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_LQUA_GIACENZE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_LQUA_GIACENZE\ZwmMbGetLquaGiacenzeResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_LQUA_GIACENZE\ZWS_MB_GET_LQUA_GIACENZE_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_MATERIAL_DESCR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATERIAL_DESCR\ZwmMbGetMaterialDescrResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATERIAL_DESCR\ZWS_MB_GET_MATERIAL_DESCR_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_MATERIAL_DISPONIBIL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATERIAL_DISPONIBIL\ZwmMbGetDisponibilitaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATERIAL_DISPONIBIL\ZWS_MB_GET_MATERIAL_DISPONIBIL_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_MATERIAL_LIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATERIAL_LIST\ZwmMbGetMaterialListResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATERIAL_LIST\ZWS_MB_GET_MATERIAL_LIST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_MATNR_INPUT_DEST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATNR_INPUT_DEST\ZwmMbGetMatnrInputDestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_MATNR_INPUT_DEST\ZWS_MB_GET_MATNR_INPUT_DEST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_ODA_INPUT_DEST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_ODA_INPUT_DEST\ZwmMbGetOdaInputDestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_ODA_INPUT_DEST\ZWS_MB_GET_ODA_INPUT_DEST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_SU_INFO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_SU_INFO\ZwmMbGetSuInfoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_SU_INFO\ZWS_MB_GET_SU_INFO_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_SYSTEM_INFO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_SYSTEM_INFO\ZwmMbGetSystemInfoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_SYSTEM_INFO\ZWS_MB_GET_SYSTEM_INFO_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_UBICAZIONI_INFO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_UBICAZIONI_INFO\ZwmMbGetUbicazioniInfoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_UBICAZIONI_INFO\ZWS_MB_GET_UBICAZIONI_INFO_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_WM_INPUT_DEST_BASIC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_WM_INPUT_DEST_BASIC\ZwmMbGetWmInputDestBasicResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_WM_INPUT_DEST_BASIC\ZWS_MB_GET_WM_INPUT_DEST_BASIC_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_WM_OUT_DEST_BASIC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_WM_OUT_DEST_BASIC\ZwmMbGetWmOutDestBasicResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_WM_OUT_DEST_BASIC\ZWS_MB_GET_WM_OUT_DEST_BASIC_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GET_WM_OUT_ORI_BASIC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GET_WM_OUT_ORI_BASIC\ZwmMbGetWmOutOriBasicResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GET_WM_OUT_ORI_BASIC\ZWS_MB_GET_WM_OUT_ORI_BASIC_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB11\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB11\ZwmMbGoodsmvtCreateMb11Response.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB11\ZWS_MB_GOODSMVT_CREATE_MB11_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB11_Q\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB11_Q\ZwmMbGoodsmvtCreateMb11QResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB11_Q\ZWS_MB_GOODSMVT_CREATE_MB11_Q_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB1B\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB1B\ZwmMbGoodsmvtCreateMb1bResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_GOODSMVT_CREATE_MB1B\ZWS_MB_GOODSMVT_CREATE_MB1B_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_PRODORD_GET_DETAIL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_PRODORD_GET_DETAIL\ZwmMbProdordGetDetailResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_PRODORD_GET_DETAIL\ZWS_MB_PRODORD_GET_DETAIL_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_MB_RF_LOGIN\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_MB_RF_LOGIN\ZwmMbExecRfLoginResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_MB_RF_LOGIN\ZWS_MB_EXEC_RF_LOGIN_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_SET_JOBSGROUP_ACTIVATE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SET_JOBSGROUP_ACTIVATE\ZwmsSetJobsgroupActivateResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SET_JOBSGROUP_ACTIVATE\ZWS_SET_JOBSGROUP_ACTIVATE_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_SET_JOBSGROUP_CLOSED\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SET_JOBSGROUP_CLOSED\ZwmsSetJobsgroupClosedResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SET_JOBSGROUP_CLOSED\ZWS_SET_JOBSGROUP_CLOSED_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_SET_JOBSGROUP_UBI_DEST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SET_JOBSGROUP_UBI_DEST\ZwmsSetJobsgroupUbiDestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SET_JOBSGROUP_UBI_DEST\ZWS_SET_JOBSGROUP_UBI_DEST_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_SET_JOB_CARRELLISTA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SET_JOB_CARRELLISTA\ZwmsSetJobCarrellistaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SET_JOB_CARRELLISTA\ZWS_SET_JOB_CARRELLISTA_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_SET_JOB_STATUS_FORCED_END\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SET_JOB_STATUS_FORCED_END\ZwmsSetJobStatusForcedEndResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SET_JOB_STATUS_FORCED_END\ZWS_SET_JOB_STATUS_FORCED_END_PUSA_DEV_100.wsdl" />
+    <None Include="Web References\WS_SET_JOB_STEP_FORCED_NEXT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SET_JOB_STEP_FORCED_NEXT\ZwmsSetJobStepForcedNextResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SET_JOB_STEP_FORCED_NEXT\ZWS_SET_JOB_STEP_FORCED_NEXT_PUSA_DEV_100.wsdl" />
+    <None Include="WM_Win_PanariaUSA_1_TemporaryKey.pfx" />
+    <None Include="WM_Win_PanariaUSA_1_TemporaryKey5Y.pfx" />
+    <None Include="WM_Win_PanariaUSA_TemporaryKey.pfx" />
+    <None Include="WM_Win_PanariaUSA_TemporaryKey_5y.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_CONNECTION\ZWS_MB_CHECK_CONNECTION_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_CONNECTION\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_CONNECTION\ZWS_MB_CHECK_CONNECTION_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_CONNECTION_ZWS_MB_CHECK_CONNECTION</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBGROUP_OK_X_CLOSE\ZWS_CHECK_JOBGROUP_OK_X_CLOSE_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_JOBGROUP_OK_X_CLOSE\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBGROUP_OK_X_CLOSE\ZWS_CHECK_JOBGROUP_OK_X_CLOSE_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_JOBGROUP_OK_X_CLOSE_ZWS_CHECK_JOBGROUP_OK_X_CLOSE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBSGROUP_MATNR_OK\ZWS_CHECK_JOBSGROUP_MATNR_OK_PUSA_TST_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_JOBSGROUP_MATNR_OK\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBSGROUP_MATNR_OK\ZWS_CHECK_JOBSGROUP_MATNR_OK_PUSA_TST_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_JOBSGROUP_MATNR_OK_ZWS_CHECK_JOBSGROUP_MATNR_OK</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBS_GROUP_LAST_SEQ\ZWS_CHECK_JOBS_GROUP_LAST_SEQ_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_JOBS_GROUP_LAST_SEQ\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBS_GROUP_LAST_SEQ\ZWS_CHECK_JOBS_GROUP_LAST_SEQ_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_JOBS_GROUP_LAST_SEQ_ZWS_CHECK_JOBS_GROUP_LAST_SEQ</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBS_OK_FOR_ACTION\ZWS_CHECK_JOBS_OK_FOR_ACTION_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_JOBS_OK_FOR_ACTION\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_JOBS_OK_FOR_ACTION\ZWS_CHECK_JOBS_OK_FOR_ACTION_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_JOBS_OK_FOR_ACTION_ZWS_CHECK_JOBS_OK_FOR_ACTION</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_PICK_ALL_SU\ZWS_CHECK_PICK_ALL_SU_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_PICK_ALL_SU\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_PICK_ALL_SU\ZWS_CHECK_PICK_ALL_SU_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_PICK_ALL_SU_ZWS_CHECK_PICK_ALL_SU</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_STOCK_AND_GET_DEST\ZWS_CHECK_STOCK_AND_GET_DEST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_STOCK_AND_GET_DEST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_STOCK_AND_GET_DEST\ZWS_CHECK_STOCK_AND_GET_DEST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_STOCK_AND_GET_DEST_ZWS_CHECK_STOCK_AND_GET_DEST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_UDC_JOBS_DEST_OK\ZWS_CHECK_UDC_JOBS_DEST_OK_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CHECK_UDC_JOBS_DEST_OK\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_CHECK_UDC_JOBS_DEST_OK\ZWS_CHECK_UDC_JOBS_DEST_OK_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_CHECK_UDC_JOBS_DEST_OK_ZWS_CHECK_UDC_JOBS_DEST_OK</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_APPLICATION_PARAMS\ZWS_GET_APPLICATION_PARAMS_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_APPLICATION_PARAMS\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_APPLICATION_PARAMS\ZWS_GET_APPLICATION_PARAMS_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_APPLICATION_PARAMS_ZWS_GET_APPLICATION_PARAMS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_APP_TRANSLATION\ZWS_GET_APP_TRANSLATION_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_APP_TRANSLATION\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_APP_TRANSLATION\ZWS_GET_APP_TRANSLATION_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_APP_TRANSLATION_ZWS_GET_APP_TRANSLATION</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_FORKLIFT\ZWS_GET_FORKLIFT_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_FORKLIFT\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_FORKLIFT\ZWS_GET_FORKLIFT_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_FORKLIFT_ZWS_GET_FORKLIFT</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBSGROUP_EXE_SUMMARY\ZWS_GET_JOBSGROUP_EXE_SUMMARY_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_JOBSGROUP_EXE_SUMMARY\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBSGROUP_EXE_SUMMARY\ZWS_GET_JOBSGROUP_EXE_SUMMARY_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_JOBSGROUP_EXE_SUMMARY_ZWS_GET_JOBSGROUP_EXE_SUMMARY</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_GROUP_LIST\ZWS_GET_JOBS_GROUP_LIST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_JOBS_GROUP_LIST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_GROUP_LIST\ZWS_GET_JOBS_GROUP_LIST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_JOBS_GROUP_LIST_ZWS_GET_JOBS_GROUP_LIST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_GROUP_SINGLE_MB\ZWS_GET_JOBS_GROUP_SINGLE_MB_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_JOBS_GROUP_SINGLE_MB\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_GROUP_SINGLE_MB\ZWS_GET_JOBS_GROUP_SINGLE_MB_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_JOBS_GROUP_SINGLE_MB_ZWS_GET_JOBS_GROUP_SINGLE_MB</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_LIST\ZWS_GET_JOBS_LIST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_JOBS_LIST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_LIST\ZWS_GET_JOBS_LIST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_JOBS_LIST_ZWS_GET_JOBS_LIST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_SINGLE\ZWS_GET_JOBS_SINGLE_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_JOBS_SINGLE\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOBS_SINGLE\ZWS_GET_JOBS_SINGLE_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_JOBS_SINGLE_ZWS_GET_JOBS_SINGLE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOB_GROUP_EXEC_INFO\ZWS_GET_JOB_GROUP_EXEC_INFO_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_JOB_GROUP_EXEC_INFO\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_JOB_GROUP_EXEC_INFO\ZWS_GET_JOB_GROUP_EXEC_INFO_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_JOB_GROUP_EXEC_INFO_ZWS_GET_JOB_GROUP_EXEC_INFO</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_MATNR_PARTITE\ZWS_GET_MATNR_PARTITE_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_MATNR_PARTITE\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_MATNR_PARTITE\ZWS_GET_MATNR_PARTITE_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_MATNR_PARTITE_ZWS_GET_MATNR_PARTITE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_UBI_SPUNTA\ZWS_GET_UBI_SPUNTA_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_UBI_SPUNTA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_UBI_SPUNTA\ZWS_GET_UBI_SPUNTA_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_UBI_SPUNTA_ZWS_GET_UBI_SPUNTA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_USERS_PROF_LGTYP\ZWS_GET_USERS_PROF_LGTYP_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GET_USERS_PROF_LGTYP\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_GET_USERS_PROF_LGTYP\ZWS_GET_USERS_PROF_LGTYP_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_GET_USERS_PROF_LGTYP_ZWS_GET_USERS_PROF_LGTYP</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_JOB_EM_STEPS_EXECUTED\ZWS_JOB_EM_STEPS_EXECUTED_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_JOB_EM_STEPS_EXECUTED\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_JOB_EM_STEPS_EXECUTED\ZWS_JOB_EM_STEPS_EXECUTED_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_JOB_EM_STEPS_EXECUTED_ZWS_JOB_EM_STEPS_EXECUTED</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_JOB_STEPS_EXECUTED\ZWS_JOB_STEPS_EXECUTED_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_JOB_STEPS_EXECUTED\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_JOB_STEPS_EXECUTED\ZWS_JOB_STEPS_EXECUTED_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_JOB_STEPS_EXECUTED_ZWS_JOB_STEPS_EXECUTED</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_DOCMAT\ZWS_MB_CHECK_DOCMAT_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_DOCMAT\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_DOCMAT\ZWS_MB_CHECK_DOCMAT_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_DOCMAT_ZWS_MB_CHECK_DOCMAT</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_LENUM_GIACENZA\ZWS_MB_CHECK_LENUM_GIACENZA_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_LENUM_GIACENZA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_LENUM_GIACENZA\ZWS_MB_CHECK_LENUM_GIACENZA_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_LENUM_GIACENZA_ZWS_MB_CHECK_LENUM_GIACENZA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_LENUM_WITH_LGPLA\ZWS_MB_CHECK_LENUM_WITH_LGPLA_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_LENUM_WITH_LGPLA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_LENUM_WITH_LGPLA\ZWS_MB_CHECK_LENUM_WITH_LGPLA_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_LENUM_WITH_LGPLA_ZWS_MB_CHECK_LENUM_WITH_LGPLA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_LGPLA\ZWS_MB_CHECK_LGPLA_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_LGPLA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_LGPLA\ZWS_MB_CHECK_LGPLA_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_LGPLA_ZWS_MB_CHECK_LGPLA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_MATERIAL_EXIST\ZWS_MB_CHECK_MATERIAL_EXIST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_MATERIAL_EXIST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_MATERIAL_EXIST\ZWS_MB_CHECK_MATERIAL_EXIST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_MATERIAL_EXIST_ZWS_MB_CHECK_MATERIAL_EXIST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_MATNR_ANA_FABBISO\ZWS_MB_CHECK_MATNR_ANA_FABBISO_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_MATNR_ANA_FABBISO\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_MATNR_ANA_FABBISO\ZWS_MB_CHECK_MATNR_ANA_FABBISO_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_MATNR_ANA_FABBISO_ZWS_MB_CHECK_MATNR_ANA_FABBISO</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_MULTIPLE_LENUM\ZWS_MB_CHECK_MULTIPLE_LENUM_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_MULTIPLE_LENUM\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_MULTIPLE_LENUM\ZWS_MB_CHECK_MULTIPLE_LENUM_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_MULTIPLE_LENUM_ZWS_MB_CHECK_MULTIPLE_LENUM</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_ODP\ZWS_MB_CHECK_ODP_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_ODP\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_ODP\ZWS_MB_CHECK_ODP_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_ODP_ZWS_MB_CHECK_ODP</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_ORDINE_VENDITA\ZWS_MB_CHECK_ORDINE_VENDITA_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_ORDINE_VENDITA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_ORDINE_VENDITA\ZWS_MB_CHECK_ORDINE_VENDITA_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_ORDINE_VENDITA_ZWS_MB_CHECK_ORDINE_VENDITA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_STOCK_GIACENZA\ZWS_MB_CHECK_STOCK_GIACENZA_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CHECK_STOCK_GIACENZA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CHECK_STOCK_GIACENZA\ZWS_MB_CHECK_STOCK_GIACENZA_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CHECK_STOCK_GIACENZA_ZWS_MB_CHECK_STOCK_GIACENZA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CREA_UBICAZIONE\ZWS_MB_CREA_UBICAZIONE_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_CREA_UBICAZIONE\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_CREA_UBICAZIONE\ZWS_MB_CREA_UBICAZIONE_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_CREA_UBICAZIONE_ZWS_MB_CREA_UBICAZIONE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_EXEC_WM_TO_MOVE_SU\ZWS_MB_EXEC_WM_TO_MOVE_SU_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_EXEC_WM_TO_MOVE_SU\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_EXEC_WM_TO_MOVE_SU\ZWS_MB_EXEC_WM_TO_MOVE_SU_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_EXEC_WM_TO_MOVE_SU_ZWS_MB_EXEC_WM_TO_MOVE_SU</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL\ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL_PUSA_SBX_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_EXEC_WM_TO_MOVE_SU_MUL\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL\ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL_PUSA_SBX_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_EXEC_WM_TO_MOVE_SU_MUL_ZWS_MB_EXEC_WM_TO_MOVE_SU_MUL</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_EXEC_WM_WMS_TO\ZWS_MB_EXEC_WM_WMS_TO_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_EXEC_WM_WMS_TO\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_EXEC_WM_WMS_TO\ZWS_MB_EXEC_WM_WMS_TO_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_EXEC_WM_WMS_TO_ZWS_MB_EXEC_WM_WMS_TO</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_COMMESSE_DOCMAT\ZWS_MB_GET_COMMESSE_DOCMAT_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_COMMESSE_DOCMAT\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_COMMESSE_DOCMAT\ZWS_MB_GET_COMMESSE_DOCMAT_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_COMMESSE_DOCMAT_ZWS_MB_GET_COMMESSE_DOCMAT</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_DOCMAT\ZWS_MB_GET_DOCMAT_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_DOCMAT\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_DOCMAT\ZWS_MB_GET_DOCMAT_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_DOCMAT_ZWS_MB_GET_DOCMAT</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_DOCMAT_CONFIRM_QTY\ZWS_MB_GET_DOCMAT_CONFIRM_QTY_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_DOCMAT_CONFIRM_QTY\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_DOCMAT_CONFIRM_QTY\ZWS_MB_GET_DOCMAT_CONFIRM_QTY_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_DOCMAT_CONFIRM_QTY_ZWS_MB_GET_DOCMAT_CONFIRM_QTY</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_DOCMAT_POS_DA_CONF\ZWS_MB_GET_DOCMAT_POS_DA_CONF_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_DOCMAT_POS_DA_CONF\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_DOCMAT_POS_DA_CONF\ZWS_MB_GET_DOCMAT_POS_DA_CONF_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_DOCMAT_POS_DA_CONF_ZWS_MB_GET_DOCMAT_POS_DA_CONF</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_LGTYP_LIST\ZWS_MB_GET_LGTYP_LIST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_LGTYP_LIST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_LGTYP_LIST\ZWS_MB_GET_LGTYP_LIST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_LGTYP_LIST_ZWS_MB_GET_LGTYP_LIST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_LQUA_GIACENZE\ZWS_MB_GET_LQUA_GIACENZE_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_LQUA_GIACENZE\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_LQUA_GIACENZE\ZWS_MB_GET_LQUA_GIACENZE_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_LQUA_GIACENZE_ZWS_MB_GET_LQUA_GIACENZE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATERIAL_DESCR\ZWS_MB_GET_MATERIAL_DESCR_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_MATERIAL_DESCR\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATERIAL_DESCR\ZWS_MB_GET_MATERIAL_DESCR_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_MATERIAL_DESCR_ZWS_MB_GET_MATERIAL_DESCR</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATERIAL_DISPONIBIL\ZWS_MB_GET_MATERIAL_DISPONIBIL_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_MATERIAL_DISPONIBIL\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATERIAL_DISPONIBIL\ZWS_MB_GET_MATERIAL_DISPONIBIL_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_MATERIAL_DISPONIBIL_ZWS_MB_GET_MATERIAL_DISPONIBIL</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATERIAL_LIST\ZWS_MB_GET_MATERIAL_LIST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_MATERIAL_LIST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATERIAL_LIST\ZWS_MB_GET_MATERIAL_LIST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_MATERIAL_LIST_ZWS_MB_GET_MATERIAL_LIST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATNR_INPUT_DEST\ZWS_MB_GET_MATNR_INPUT_DEST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_MATNR_INPUT_DEST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_MATNR_INPUT_DEST\ZWS_MB_GET_MATNR_INPUT_DEST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_MATNR_INPUT_DEST_ZWS_MB_GET_MATNR_INPUT_DEST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_ODA_INPUT_DEST\ZWS_MB_GET_ODA_INPUT_DEST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_ODA_INPUT_DEST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_ODA_INPUT_DEST\ZWS_MB_GET_ODA_INPUT_DEST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_ODA_INPUT_DEST_ZWS_MB_GET_ODA_INPUT_DEST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_SU_INFO\ZWS_MB_GET_SU_INFO_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_SU_INFO\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_SU_INFO\ZWS_MB_GET_SU_INFO_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_SU_INFO_ZWS_MB_GET_SU_INFO</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_SYSTEM_INFO\ZWS_MB_GET_SYSTEM_INFO_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_SYSTEM_INFO\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_SYSTEM_INFO\ZWS_MB_GET_SYSTEM_INFO_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_SYSTEM_INFO_ZWS_MB_GET_SYSTEM_INFO</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_UBICAZIONI_INFO\ZWS_MB_GET_UBICAZIONI_INFO_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_UBICAZIONI_INFO\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_UBICAZIONI_INFO\ZWS_MB_GET_UBICAZIONI_INFO_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_UBICAZIONI_INFO_ZWS_MB_GET_UBICAZIONI_INFO</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_WM_INPUT_DEST_BASIC\ZWS_MB_GET_WM_INPUT_DEST_BASIC_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_WM_INPUT_DEST_BASIC\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_WM_INPUT_DEST_BASIC\ZWS_MB_GET_WM_INPUT_DEST_BASIC_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_WM_INPUT_DEST_BASIC_ZWS_MB_GET_WM_INPUT_DEST_BASIC</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_WM_OUT_DEST_BASIC\ZWS_MB_GET_WM_OUT_DEST_BASIC_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_WM_OUT_DEST_BASIC\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_WM_OUT_DEST_BASIC\ZWS_MB_GET_WM_OUT_DEST_BASIC_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_WM_OUT_DEST_BASIC_ZWS_MB_GET_WM_OUT_DEST_BASIC</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_WM_OUT_ORI_BASIC\ZWS_MB_GET_WM_OUT_ORI_BASIC_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GET_WM_OUT_ORI_BASIC\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GET_WM_OUT_ORI_BASIC\ZWS_MB_GET_WM_OUT_ORI_BASIC_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GET_WM_OUT_ORI_BASIC_ZWS_MB_GET_WM_OUT_ORI_BASIC</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GOODSMVT_CREATE_MB11\ZWS_MB_GOODSMVT_CREATE_MB11_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GOODSMVT_CREATE_MB11\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GOODSMVT_CREATE_MB11\ZWS_MB_GOODSMVT_CREATE_MB11_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GOODSMVT_CREATE_MB11_ZWS_MB_GOODSMVT_CREATE_MB11</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GOODSMVT_CREATE_MB11_Q\ZWS_MB_GOODSMVT_CREATE_MB11_Q_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GOODSMVT_CREATE_MB11_Q\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GOODSMVT_CREATE_MB11_Q\ZWS_MB_GOODSMVT_CREATE_MB11_Q_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GOODSMVT_CREATE_MB11_Q_ZWS_MB_GOODSMVT_CREATE_MB11_Q</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GOODSMVT_CREATE_MB1B\ZWS_MB_GOODSMVT_CREATE_MB1B_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_GOODSMVT_CREATE_MB1B\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_GOODSMVT_CREATE_MB1B\ZWS_MB_GOODSMVT_CREATE_MB1B_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_GOODSMVT_CREATE_MB1B_ZWS_MB_GOODSMVT_CREATE_MB1B</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_PRODORD_GET_DETAIL\ZWS_MB_PRODORD_GET_DETAIL_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_PRODORD_GET_DETAIL\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_PRODORD_GET_DETAIL\ZWS_MB_PRODORD_GET_DETAIL_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_PRODORD_GET_DETAIL_ZWS_MB_PRODORD_GET_DETAIL</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_RF_LOGIN\ZWS_MB_EXEC_RF_LOGIN_PUSA_DEV_100.XML">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MB_RF_LOGIN\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_MB_RF_LOGIN\ZWS_MB_EXEC_RF_LOGIN_PUSA_DEV_100.XML</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_MB_EXEC_RF_LOGIN_ZWS_MB_EXEC_RF_LOGIN</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOBSGROUP_ACTIVATE\ZWS_SET_JOBSGROUP_ACTIVATE_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SET_JOBSGROUP_ACTIVATE\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOBSGROUP_ACTIVATE\ZWS_SET_JOBSGROUP_ACTIVATE_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_SET_JOBSGROUP_ACTIVATE_ZWS_SET_JOBSGROUP_ACTIVATE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOBSGROUP_CLOSED\ZWS_SET_JOBSGROUP_CLOSED_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SET_JOBSGROUP_CLOSED\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOBSGROUP_CLOSED\ZWS_SET_JOBSGROUP_CLOSED_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_SET_JOBSGROUP_CLOSED_ZWS_SET_JOBSGROUP_CLOSED</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOBSGROUP_UBI_DEST\ZWS_SET_JOBSGROUP_UBI_DEST_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SET_JOBSGROUP_UBI_DEST\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOBSGROUP_UBI_DEST\ZWS_SET_JOBSGROUP_UBI_DEST_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_SET_JOBSGROUP_UBI_DEST_ZWS_SET_JOBSGROUP_UBI_DEST</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOB_CARRELLISTA\ZWS_SET_JOB_CARRELLISTA_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SET_JOB_CARRELLISTA\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOB_CARRELLISTA\ZWS_SET_JOB_CARRELLISTA_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_SET_JOB_CARRELLISTA_ZWS_SET_JOB_CARRELLISTA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOB_STATUS_FORCED_END\ZWS_SET_JOB_STATUS_FORCED_END_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SET_JOB_STATUS_FORCED_END\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOB_STATUS_FORCED_END\ZWS_SET_JOB_STATUS_FORCED_END_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_SET_JOB_STATUS_FORCED_END_ZWS_SET_JOB_STATUS_FORCED_END</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOB_STEP_FORCED_NEXT\ZWS_SET_JOB_STEP_FORCED_NEXT_PUSA_DEV_100.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SET_JOB_STEP_FORCED_NEXT\</RelPath>
+      <UpdateFromURL>C:\Net_Projects\WM_Mobile_PanariaUSA\Web_Services\ZWS_SET_JOB_STEP_FORCED_NEXT\ZWS_SET_JOB_STEP_FORCED_NEXT_PUSA_DEV_100.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WM_Win_PanariaUSA_WS_SET_JOB_STEP_FORCED_NEXT_ZWS_SET_JOB_STEP_FORCED_NEXT</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Logo_WM_eOne_16x16.ico" />
+    <Content Include="Logo_WM_eOne_32x32.ico" />
+    <None Include="Resources\keyboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

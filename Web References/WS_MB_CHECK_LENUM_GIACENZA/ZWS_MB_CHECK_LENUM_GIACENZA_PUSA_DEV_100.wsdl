@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:n1="urn:sap-com:document:sap:rfc:functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="BN__ZWS_MB_CHECK_LENUM_GIACENZA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN__ZWS_MB_CHECK_LENUM_GIACENZA_soap12">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__ZWS_MB_CHECK_LENUM_GIACENZA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
+          <sapcentraladmin:BusinessApplicationID>000C29FD93861EE589E23A0884D34E8B</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__ZwmMbCheckLenumGiacenza">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char12">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="12" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char15">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="15" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char16">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="16" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char18">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="18" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char30">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="30" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char32">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="32" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char40">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char9">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="9" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="clnt3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="date10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+          <xsd:pattern value="\d\d\d\d-\d\d-\d\d" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="decimal11.3">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="11" />
+          <xsd:fractionDigits value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="lang">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric12">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="12" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="quantum13.3">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="13" />
+          <xsd:fractionDigits value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="quantum15.3">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="15" />
+          <xsd:fractionDigits value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+      <xsd:simpleType name="time">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+      <xsd:simpleType name="unit3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns:n0="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions" />
+      <xsd:complexType name="ZclassificazioneZ01">
+        <xsd:sequence>
+          <xsd:element name="EtileUmconsegna" type="n0:char30" />
+          <xsd:element name="EtileUmstatistica" type="n0:char30" />
+          <xsd:element name="EtileUmbaseUmconsegna" type="xsd:float" />
+          <xsd:element name="EtileUmbaseUmstatistica" type="xsd:float" />
+          <xsd:element name="EtileUmbaseCollo" type="xsd:float" />
+          <xsd:element name="EtileUmbaseMl" type="xsd:float" />
+          <xsd:element name="EtilePezziScatola" type="xsd:float" />
+          <xsd:element name="EtileScatolePallet" type="xsd:float" />
+          <xsd:element name="EtilePallLargh" type="xsd:float" />
+          <xsd:element name="EtilePallProfond" type="xsd:float" />
+          <xsd:element name="EtilePallAltezzaPalCompl" type="xsd:float" />
+          <xsd:element name="EtilePallAltezSingolPiano" type="xsd:float" />
+          <xsd:element name="EtilePallNumeroPiani" type="xsd:float" />
+          <xsd:element name="EtilePallColliPerPiano" type="xsd:float" />
+          <xsd:element name="EtilePallAltezzaPianale" type="xsd:float" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZmaraMobile">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="Matnr" type="n0:char18" />
+          <xsd:element name="Ersda" type="n0:date10" />
+          <xsd:element name="Ernam" type="n0:char12" />
+          <xsd:element name="Laeda" type="n0:date10" />
+          <xsd:element name="Aenam" type="n0:char12" />
+          <xsd:element name="Vpsta" type="n0:char15" />
+          <xsd:element name="Pstat" type="n0:char15" />
+          <xsd:element name="Mtart" type="n0:char4" />
+          <xsd:element name="Mbrsh" type="n0:char1" />
+          <xsd:element name="Matkl" type="n0:char9" />
+          <xsd:element name="Bismt" type="n0:char18" />
+          <xsd:element name="Meins" type="n0:unit3" />
+          <xsd:element name="Bstme" type="n0:unit3" />
+          <xsd:element name="Groes" type="n0:char32" />
+          <xsd:element name="Labor" type="n0:char3" />
+          <xsd:element name="Ekwsl" type="n0:char4" />
+          <xsd:element name="Brgew" type="n0:quantum13.3" />
+          <xsd:element name="Ntgew" type="n0:quantum13.3" />
+          <xsd:element name="Gewei" type="n0:unit3" />
+          <xsd:element name="Volum" type="n0:quantum13.3" />
+          <xsd:element name="Voleh" type="n0:unit3" />
+          <xsd:element name="Ean11" type="n0:char18" />
+          <xsd:element name="Laeng" type="n0:quantum13.3" />
+          <xsd:element name="Breit" type="n0:quantum13.3" />
+          <xsd:element name="Hoehe" type="n0:quantum13.3" />
+          <xsd:element name="Meabm" type="n0:unit3" />
+          <xsd:element name="Xchpf" type="n0:char1" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZwmLquaExtRec">
+        <xsd:sequence>
+          <xsd:element name="Lqua" type="tns:ZlquaMobile" />
+          <xsd:element name="ZwmStockInfo" type="tns:ZwmStockInfoRec" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZlquaMobile">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="Lgnum" type="n0:char3" />
+          <xsd:element name="Lqnum" type="n0:numeric10" />
+          <xsd:element name="Matnr" type="n0:char18" />
+          <xsd:element name="Werks" type="n0:char4" />
+          <xsd:element name="Charg" type="n0:char10" />
+          <xsd:element name="Bestq" type="n0:char1" />
+          <xsd:element name="Sobkz" type="n0:char1" />
+          <xsd:element name="Sonum" type="n0:char16" />
+          <xsd:element name="Lgtyp" type="n0:char3" />
+          <xsd:element name="Lgpla" type="n0:char10" />
+          <xsd:element name="Plpos" type="n0:char2" />
+          <xsd:element name="Skzue" type="n0:char1" />
+          <xsd:element name="Skzua" type="n0:char1" />
+          <xsd:element name="Skzse" type="n0:char1" />
+          <xsd:element name="Skzsa" type="n0:char1" />
+          <xsd:element name="Skzsi" type="n0:char1" />
+          <xsd:element name="Spgru" type="n0:char1" />
+          <xsd:element name="Zeugn" type="n0:char10" />
+          <xsd:element name="Bdatu" type="n0:date10" />
+          <xsd:element name="Bzeit" type="n0:time" />
+          <xsd:element name="Letyp" type="n0:char3" />
+          <xsd:element name="Meins" type="n0:unit3" />
+          <xsd:element name="Gesme" type="n0:quantum13.3" />
+          <xsd:element name="Verme" type="n0:quantum13.3" />
+          <xsd:element name="Einme" type="n0:quantum13.3" />
+          <xsd:element name="Ausme" type="n0:quantum13.3" />
+          <xsd:element name="Mgewi" type="n0:decimal11.3" />
+          <xsd:element name="Gewei" type="n0:unit3" />
+          <xsd:element name="Tbnum" type="n0:numeric10" />
+          <xsd:element name="Lenum" type="n0:char20" />
+          <xsd:element name="Qplos" type="n0:numeric12" />
+          <xsd:element name="Vfdat" type="n0:date10" />
+          <xsd:element name="Kober" type="n0:char3" />
+          <xsd:element name="Lgort" type="n0:char4" />
+          <xsd:element name="GesmeCons" type="n0:quantum13.3" />
+          <xsd:element name="VermeCons" type="n0:quantum13.3" />
+          <xsd:element name="EinmeCons" type="n0:quantum13.3" />
+          <xsd:element name="AusmeCons" type="n0:quantum13.3" />
+          <xsd:element name="Vrkme" type="n0:unit3" />
+          <xsd:element name="Maktg" type="n0:char40" />
+          <xsd:element name="GestioneUmAttiva" type="n0:char1" />
+          <xsd:element name="VarianteImballo" type="tns:Ze1Mt00015" />
+          <xsd:element name="LagpLkapv" type="n0:decimal11.3" />
+          <xsd:element name="NumPallet" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Ze1Mt00015">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="Matnr" type="n0:char18" />
+          <xsd:element name="Imballo" type="n0:char2" />
+          <xsd:element name="PzXSc" type="n0:numeric3" />
+          <xsd:element name="ScXPal" type="n0:numeric3" />
+          <xsd:element name="M2XPal" type="n0:quantum15.3" />
+          <xsd:element name="Ean11Sc" type="n0:char18" />
+          <xsd:element name="Ean11Pal" type="n0:char18" />
+          <xsd:element name="CodImb" type="n0:char2" />
+          <xsd:element name="PallLarg" type="n0:numeric3" />
+          <xsd:element name="PallProf" type="n0:numeric3" />
+          <xsd:element name="PallAlt" type="n0:numeric3" />
+          <xsd:element name="PallAltP" type="n0:numeric3" />
+          <xsd:element name="PallPian" type="n0:numeric2" />
+          <xsd:element name="PallColPia" type="n0:numeric3" />
+          <xsd:element name="Testo" type="n0:char20" />
+          <xsd:element name="ImballoAlterna" type="n0:char18" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZwmStockInfoRec">
+        <xsd:sequence>
+          <xsd:element name="Meins" type="n0:unit3" />
+          <xsd:element name="QtaTotDisponibileBase" type="n0:quantum13.3" />
+          <xsd:element name="QtaTotPresenteBase" type="n0:quantum13.3" />
+          <xsd:element name="QtaTotDaImmagazBase" type="n0:quantum13.3" />
+          <xsd:element name="QtaTotDaPrelevareBase" type="n0:quantum13.3" />
+          <xsd:element name="Vrkme" type="n0:unit3" />
+          <xsd:element name="QtaTotDisponibileCons" type="n0:quantum13.3" />
+          <xsd:element name="QtaTotPresenteCons" type="n0:quantum13.3" />
+          <xsd:element name="QtaTotDaImmagazCons" type="n0:quantum13.3" />
+          <xsd:element name="QtaTotDaPrelevareCons" type="n0:quantum13.3" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZtwmLquaExtRec">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZwmLquaExtRec" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZwmMbCheckLenumGiacenza">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="IBestq" type="n0:char1" />
+            <xsd:element minOccurs="0" name="ICharg" type="n0:char10" />
+            <xsd:element minOccurs="0" name="ICheckBestq" type="n0:char1" />
+            <xsd:element minOccurs="0" name="ICheckBlock" type="n0:char1" />
+            <xsd:element minOccurs="0" name="ICheckOnProduction" type="n0:char1" />
+            <xsd:element minOccurs="0" name="IEnableDebug" type="n0:char1" />
+            <xsd:element minOccurs="0" name="ILanguage" type="n0:lang" />
+            <xsd:element name="ILenum" type="n0:char20" />
+            <xsd:element minOccurs="0" name="ILgnum" type="n0:char3" />
+            <xsd:element minOccurs="0" name="ILgpla" type="n0:char10" />
+            <xsd:element minOccurs="0" name="ILgtyp" type="n0:char3" />
+            <xsd:element minOccurs="0" name="ILqnum" type="n0:numeric10" />
+            <xsd:element minOccurs="0" name="IMatnr" type="n0:char18" />
+            <xsd:element minOccurs="0" name="IMeins" type="n0:unit3" />
+            <xsd:element minOccurs="0" name="IQtaRichiesta" type="n0:quantum13.3" />
+            <xsd:element minOccurs="0" name="ISobkz" type="n0:char1" />
+            <xsd:element minOccurs="0" name="ISonum" type="n0:char16" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZwmMbCheckLenumGiacenzaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ECheckIsBlocked" type="n0:char1" />
+            <xsd:element name="ECheckOk" type="n0:char1" />
+            <xsd:element name="ECheckOnProduction" type="n0:char1" />
+            <xsd:element name="ECheckPickAllSu" type="n0:char1" />
+            <xsd:element name="EClassificazioneZ01" type="tns:ZclassificazioneZ01" />
+            <xsd:element name="EDataMara" type="tns:ZmaraMobile" />
+            <xsd:element name="EErrorCode" type="n0:char10" />
+            <xsd:element name="EErrorDescription" type="n0:string" />
+            <xsd:element name="EErrorSubrc" type="xsd:int" />
+            <xsd:element name="EFoundrows" type="xsd:int" />
+            <xsd:element name="ELquaTabFree" type="tns:ZtwmLquaExtRec" />
+            <xsd:element name="ESuccess" type="n0:char4" />
+            <xsd:element name="ETextMaktg" type="n0:char40" />
+            <xsd:element name="EVarianteImballo" type="tns:Ze1Mt00015" />
+            <xsd:element name="EZwmStockInfoRec" type="tns:ZwmStockInfoRec" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZwmMbCheckLenumGiacenza">
+    <wsdl:part name="parameters" element="tns:ZwmMbCheckLenumGiacenza" />
+  </wsdl:message>
+  <wsdl:message name="ZwmMbCheckLenumGiacenzaResponse">
+    <wsdl:part name="parameter" element="tns:ZwmMbCheckLenumGiacenzaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ZWS_MB_CHECK_LENUM_GIACENZA">
+    <wsdl:documentation>
+      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+        <sapdoc:docitem docURL="http://CLDDEV01.pancloud.local:50040/sap/bc/esdt/docu/sd_text?sap-client=100&amp;sd_name=ZWS_MB_CHECK_LENUM_GIACENZA" />
+      </sapdoc:sapdoc>
+    </wsdl:documentation>
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__ZWS_MB_CHECK_LENUM_GIACENZA" />
+    </wsp:Policy>
+    <wsdl:operation name="ZwmMbCheckLenumGiacenza">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__ZwmMbCheckLenumGiacenza" />
+      </wsp:Policy>
+      <wsdl:input message="tns:ZwmMbCheckLenumGiacenza" />
+      <wsdl:output message="tns:ZwmMbCheckLenumGiacenzaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZWS_MB_CHECK_LENUM_GIACENZA" type="tns:ZWS_MB_CHECK_LENUM_GIACENZA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZWS_MB_CHECK_LENUM_GIACENZA" />
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZwmMbCheckLenumGiacenza">
+      <soap:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZWS_MB_CHECK_LENUM_GIACENZA:ZwmMbCheckLenumGiacenzaRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZWS_MB_CHECK_LENUM_GIACENZA_soap12" type="tns:ZWS_MB_CHECK_LENUM_GIACENZA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZWS_MB_CHECK_LENUM_GIACENZA_soap12" />
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZwmMbCheckLenumGiacenza">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:ZWS_MB_CHECK_LENUM_GIACENZA:ZwmMbCheckLenumGiacenzaRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZWS_MB_CHECK_LENUM_GIACENZA">
+    <wsdl:port name="ZWS_MB_CHECK_LENUM_GIACENZA" binding="tns:ZWS_MB_CHECK_LENUM_GIACENZA">
+      <soap:address location="http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_mb_check_lenum_giacenza/100/zws_mb_check_lenum_giacenza/zws_mb_check_lenum_giacenza" />
+    </wsdl:port>
+    <wsdl:port name="ZWS_MB_CHECK_LENUM_GIACENZA_soap12" binding="tns:ZWS_MB_CHECK_LENUM_GIACENZA_soap12">
+      <wsoap12:address location="http://CLDDEV01.pancloud.local:50040/sap/bc/srt/rfc/sap/zws_mb_check_lenum_giacenza/100/zws_mb_check_lenum_giacenza/zws_mb_check_lenum_giacenza" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,10 @@
+20/03/2018 09:17:06;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfigConn] ;
+20/03/2018 09:17:06;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfigConn] ;
+20/03/2018 09:17:08;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfig] ;
+20/03/2018 09:17:08;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfig] ;
+20/03/2018 09:24:17;[L];frmLogin;actExecLogin_Click;Avvio Applicazione. UserId:PALTRY  Password:;
+20/03/2018 10:07:43;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfigConn] ;
+20/03/2018 10:07:43;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfigConn] ;
+20/03/2018 10:07:45;[L];clsMainApplication;StartApplication;LOG: before method [LeggiFileAppConfig] ;
+20/03/2018 10:07:45;[L];clsMainApplication;StartApplication;LOG: after method [LeggiFileAppConfig] ;
+20/03/2018 10:07:50;[L];frmLogin;actExecLogin_Click;Avvio Applicazione. UserId:PALTRY  Password:;

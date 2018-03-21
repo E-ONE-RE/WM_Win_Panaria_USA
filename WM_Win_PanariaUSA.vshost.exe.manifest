@@ -60,7 +60,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>euwgwxyKX1M3bzu5ieKhZEXD8WDnLFkLwC/Ouvd6ZNg=</dsig:DigestValue>
+        <dsig:DigestValue>Ge7zxJZk0KCtWptRcO9gWIOVeYonSUmqbiW8v2WEL+I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -82,13 +82,13 @@
       <dsig:DigestValue>EpbADFRXh/UBB3FbNx9pzzOqbvQ3x5JFHzlVXutP3CU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WM_Win_PanariaUSA.exe.config" size="23728">
+  <file name="WM_Win_PanariaUSA.exe.config" size="23762">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>g2wiHJFJfhioli6hzPVBJ2pSgYRjPCN3tNLLQkwPUj8=</dsig:DigestValue>
+      <dsig:DigestValue>66jZRX1RtukaBraHBUHn5SbZzD1TpuKSolN9vEGaBf8=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
